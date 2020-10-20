@@ -5,7 +5,7 @@ using UnityEngine;
 public class TrackSidesController : MonoBehaviour
 {
     public TrackController trackController; // reference to our Track Controller script
-    Renderer r; // reference to the renderer attached to the object this script is attached to
+    Renderer r; // private reference to the renderer
     public bool openForTrack; // bool for if the side can take track or not
     public bool isConnected; // bool for if the side is connected to another side or not
     public Transform trackSideTransform; // transform location for that side
@@ -19,7 +19,7 @@ public class TrackSidesController : MonoBehaviour
             isConnected = false; // set the bool for isConnected to false
         }
         
-        r = GetComponent<Renderer>(); // get the rigid body of the object this script is attached to
+        r = GetComponent<Renderer>(); // get the renderer of the object this script is attached to
 
         if(gameObject.CompareTag("TrackTransformClosed")) // if the object this script is attached to has the tag NoTrackConnections
         {

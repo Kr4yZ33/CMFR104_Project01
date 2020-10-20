@@ -10,10 +10,10 @@ public class TrackController : MonoBehaviour
     public Transform parentTransform; // track main mesh parent transform
     Transform previousTransform; // call this if tracking is lost to place the object again
 
-    readonly Rigidbody r; // rigid body of the object this script is attached to
+    //readonly Rigidbody r; // rigid body of the object this script is attached to
 
-    void Start()
-    {
+    //void Start()
+    //{
         //if(isHeld == true) // if the bool for being held is true
         //{
             //r.isKinematic = true; // turn off gravity on the rigid body
@@ -22,7 +22,7 @@ public class TrackController : MonoBehaviour
         //{
             //r.isKinematic = false; // turn gravity back on
         //}
-    }
+    //}
 
     void Update()
     {
@@ -34,11 +34,11 @@ public class TrackController : MonoBehaviour
     /// </summary>
     void PreviousTransformPosition()
     {
-        if (previousTransform == null)
+        if (previousTransform == null) // if the previous transform coordinates are empty
         {
-            previousTransform = parentTransform;
+            previousTransform = parentTransform; // set the previous transform coordinates to the parent transform coordinates
         }
 
-        previousTransform = parentTransform;
+        previousTransform = parentTransform; // set the previous transform coordinates to the parent transform coordinates
     }
 }

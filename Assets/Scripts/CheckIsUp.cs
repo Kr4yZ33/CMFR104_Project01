@@ -4,31 +4,29 @@ using UnityEngine;
 
 public class CheckIsUp : MonoBehaviour
 {
-    public float tolerance = 0.9f;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float tolerance = 0.9f; // Used to set the value of dot product
 
     // Update is called once per frame
     void Update()
     {
-        if (IsUpsideDown())
+        if (IsUpsideDown()) // if the function IsUpsideDown is called
         {
-            Debug.Log("Is Upside Down");
+            Debug.Log("Is Upside Down"); // debug out Is Upside Down when t his function is called
         } else
         {
-            Debug.Log("Is Right Side Up");
+            Debug.Log("Is Right Side Up"); // otherwise debug out Is right side up
         }
 
-        float valueOfDotProduct = Vector3.Dot(transform.up, Vector3.up);
-        Debug.Log("The Dot Product is " + valueOfDotProduct);
+        float valueOfDotProduct = Vector3.Dot(transform.up, Vector3.up); // sets the value of the dot product
+        Debug.Log("The Dot Product is " + valueOfDotProduct); // debug to log The Dot Product is "whatever the value is"
     }
 
+    /// <summary>
+    /// function to work out if the object is upside down
+    /// </summary>
+    /// <returns></returns>
     public bool IsUpsideDown()
     {
-        return (Vector3.Dot(transform.up, Vector3.up) < -tolerance);
+        return (Vector3.Dot(transform.up, Vector3.up) < -tolerance); // return coordinate details of up
     }
 }

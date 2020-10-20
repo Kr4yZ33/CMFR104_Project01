@@ -4,27 +4,21 @@ using UnityEngine;
 
 public class JPColourChange : MonoBehaviour
 {
+    Renderer r; // reference to the renderer
 
-    Renderer r;
     // Start is called before the first frame update
     void Start()
     {
-        r = GetComponent<Renderer>();
+        r = GetComponent<Renderer>(); // get the renderer component from the object this script is attached to
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetRed() // function to set the red colour
     {
-
+        r.material.color = Color.red; // set colour red
     }
 
-    public void SetRed()
+    public void SetGreen() // function to set the red colour
     {
-        r.material.color = Color.red;
-    }
-
-    public void SetGreen()
-    {
-        r.material.color = Color.green;
+        r.material.color = Color.green; // set colour green
     }
 }
