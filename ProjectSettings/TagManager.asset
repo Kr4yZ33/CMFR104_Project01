@@ -21,6 +21,7 @@ TagManager:
   - HornSpawn
   - ChangeDirection
   - Train
+  - Teleport
   layers:
   - Default
   - TransparentFX

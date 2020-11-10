@@ -5,15 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CMR104_Project01.unity
     guid: 58b1857e6c39fdf4f861d53e2ee73115
-  - enabled: 1
+  - enabled: 0
     path: Assets/SUIMONO - WATER SYSTEM 2/_DEMO/Suimono2_Advanced_Demo.unity
     guid: 575c46aa944077d48aa7aedfcac6e0ff
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TrackBuilding.unity
     guid: d0f9346a0b8ad9444baaec79354fcb93
+  - enabled: 1
+    path: Assets/Scenes/RideTheTrain.unity
+    guid: 605d5b64d467f594bb6fe13514164aa5
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a01c714a5e441bf469f89bd4d5f5c880,
       type: 2}
