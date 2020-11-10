@@ -13,6 +13,14 @@ TagManager:
   - TrackR
   - TrackLTransform
   - TrackTransformOpen
+  - RockSpawn
+  - FireSpawn
+  - TreeSpawn
+  - TrackStraightSpawn
+  - TrackCornerSpawn
+  - HornSpawn
+  - ChangeDirection
+  - Train
   layers:
   - Default
   - TransparentFX
