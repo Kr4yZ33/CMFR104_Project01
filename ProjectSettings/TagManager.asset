@@ -22,6 +22,7 @@ TagManager:
   - ChangeDirection
   - Train
   - Teleport
+  - RigSizeChange
   layers:
   - Default
   - TransparentFX
