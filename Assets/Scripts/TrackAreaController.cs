@@ -4,28 +4,40 @@ using UnityEngine;
 
 public class TrackAreaController : MonoBehaviour
 {
-
-    public TrainController trainController;
     public Transform currentTarget;
+    public Vector3 targetVector;
+
     public Transform previousTarget;
+    public Vector3 previousVector;
+
     public Transform initialTarget;
+    public Vector3 initialVector;
+
     public Transform testingTarget;
 
     public float trainSpeed = 0.5f;
 
+    private void Start()
+    {
+        currentTarget = testingTarget;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if (trainController.trainHeld == true)
+        targetVector = currentTarget.position;
+        previousVector = previousTarget.position;
+        initialVector = initialTarget.position;
+
+        if (currentTarget == null)
         {
-            return;
-        }
-        else if (currentTarget == null)
-        {
-            currentTarget = testingTarget;
-            // add if null find closest transform tagged with edge or middle that does not have the bool train passing as true, then apply speed and move towards that transform
-            trainController.gameObject.transform.position = Vector3.MoveTowards(transform.position, currentTarget.transform.position, Time.deltaTime * trainSpeed);
+            currentTarget = previousTarget;
+            if (previousTarget == null)
+            {
+                Debug.Log("Previous Target not set");
+                
+            }
+            
         }
     }
 }

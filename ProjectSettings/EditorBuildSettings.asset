@@ -18,5 +18,5 @@ EditorBuildSettings:
     path: Assets/Scenes/RideTheTrain.unity
     guid: 605d5b64d467f594bb6fe13514164aa5
   m_configObjects:
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a01c714a5e441bf469f89bd4d5f5c880,
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4c8e1c7029651a94f8ede3dd4df9178b,
       type: 2}
