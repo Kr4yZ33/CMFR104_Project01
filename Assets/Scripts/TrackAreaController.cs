@@ -25,6 +25,7 @@ public class TrackAreaController : MonoBehaviour
         {
             currentTarget = testingTarget;
             // add if null find closest transform tagged with edge or middle that does not have the bool train passing as true, then apply speed and move towards that transform
+            trainController.gameObject.transform.position = Vector3.MoveTowards(transform.position, currentTarget.transform.position, Time.deltaTime * trainSpeed);
         }
     }
 }

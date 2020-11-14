@@ -25,6 +25,9 @@ TagManager:
   - RigSizeChange
   - TrackEdge
   - TrackMiddle
+  - TrackAngleSpawn
+  - GrassSpawn
+  - TreeMultiSpawn
   layers:
   - Default
   - TransparentFX
