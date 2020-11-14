@@ -23,6 +23,8 @@ TagManager:
   - Train
   - Teleport
   - RigSizeChange
+  - TrackEdge
+  - TrackMiddle
   layers:
   - Default
   - TransparentFX

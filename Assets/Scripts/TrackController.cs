@@ -14,14 +14,14 @@ public class TrackController : MonoBehaviour
 
     //void Start()
     //{
-        //if(isHeld == true) // if the bool for being held is true
-        //{
-            //r.isKinematic = true; // turn off gravity on the rigid body
-        //
-        //else if (isHeld != true) // if is held is not true
-        //{
-            //r.isKinematic = false; // turn gravity back on
-        //}
+    //if(isHeld == true) // if the bool for being held is true
+    //{
+    //r.isKinematic = true; // turn off gravity on the rigid body
+    //
+    //else if (isHeld != true) // if is held is not true
+    //{
+    //r.isKinematic = false; // turn gravity back on
+    //}
     //}
 
     void Update()
