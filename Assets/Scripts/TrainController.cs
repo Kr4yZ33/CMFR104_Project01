@@ -6,8 +6,9 @@ public class TrainController : MonoBehaviour
 {
     public TrackAreaController trackAreaController;
     public bool trainHeld;
+    public bool movementStarted;
 
-    private void Update()
+    void Update()
     {
         if (trainHeld == true)
         {
@@ -15,16 +16,17 @@ public class TrainController : MonoBehaviour
             trackAreaController.currentTarget = null;
             trackAreaController.trainSpeed = 0f;
         }
-        
-        if(trainHeld != true)
+        else
         {
+            SetFirstMoveTowardsPosition();
             trackAreaController.trainSpeed = 0.5f;
-            transform.position = Vector3.MoveTowards(transform.position, trackAreaController.targetVector, Time.deltaTime * trackAreaController.trainSpeed);
+            trackAreaController.currentTarget = trackAreaController.previousTarget;
+            transform.position = Vector3.MoveTowards(transform.position, trackAreaController.currentTarget.position, Time.deltaTime * trackAreaController.trainSpeed);
         }
     }
 
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
@@ -32,11 +34,21 @@ public class TrainController : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             trainHeld = false;
+        }
+    }
+
+    void SetFirstMoveTowardsPosition()
+    {
+        if (movementStarted == false && trainHeld != true)
+        {
+            trackAreaController.currentTarget = trackAreaController.testingTarget;
+            trackAreaController.previousTarget = trackAreaController.currentTarget;
+            movementStarted = true;
         }
     }
 }

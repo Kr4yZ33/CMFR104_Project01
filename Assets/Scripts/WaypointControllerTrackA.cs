@@ -12,26 +12,28 @@ public class WaypointControllerTrackA : MonoBehaviour
     public Transform a1;
     public Transform a2;
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Train"))
         {
             trainPassingTransform = true;
             if (tracAreaController.currentTarget.name == "A" && tracAreaController.initialTarget.name == "A1")
             {
-                tracAreaController.previousVector = a.position;
-                tracAreaController.targetVector = a2.position;
+                tracAreaController.previousTarget = a;
+                tracAreaController.currentTarget = a2;
 
-                transform.position = Vector3.MoveTowards(transform.position, tracAreaController.targetVector, Time.deltaTime * tracAreaController.trainSpeed);
+                transform.position = Vector3.MoveTowards(transform.position, tracAreaController.currentTarget.position, Time.deltaTime * tracAreaController.trainSpeed);
+
+                trainPassingTransform = false;
             }
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Train"))
         {
-            trainPassingTransform = false;
+            trainPassingTransform = true;
         }
     }
 }

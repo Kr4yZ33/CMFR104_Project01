@@ -7,31 +7,32 @@ public class WaypointControllerTrackA1 : MonoBehaviour
     public TrackAreaController tracAreaController;
 
     public bool trainPassingTransform;
-    
+
     public Transform a;
     public Transform a1;
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Train"))
         {
             trainPassingTransform = true;
-            if (tracAreaController.currentTarget.name == "A1")
+            if (tracAreaController.currentTarget == a1)
             {
-                tracAreaController.previousVector = a1.position;
-                tracAreaController.targetVector = a.position;
-                tracAreaController.initialVector = a1.position;
+                tracAreaController.previousTarget = a1;
+                tracAreaController.currentTarget = a;
+                tracAreaController.initialTarget = a1;
 
-                transform.position = Vector3.MoveTowards(transform.position, tracAreaController.targetVector, Time.deltaTime * tracAreaController.trainSpeed);
+                transform.position = Vector3.MoveTowards(transform.position, tracAreaController.currentTarget.position, Time.deltaTime * tracAreaController.trainSpeed);
+                trainPassingTransform = false;
             }
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Train"))
         {
-            trainPassingTransform = false;
+            trainPassingTransform = true;
         }
     }
 }
