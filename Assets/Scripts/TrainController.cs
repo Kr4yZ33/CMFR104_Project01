@@ -8,20 +8,48 @@ public class TrainController : MonoBehaviour
     public bool trainHeld;
     public bool movementStarted;
 
-    void Update()
+    public Transform startingPos;
+
+    public float minDistanceToTarget = 0.1f;
+
+    public Vector3 targetPosition; // reference to our target position
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+        targetPosition = startingPos.position;
+        transform.position = targetPosition;
+    }
+
+   void Update()
     {
         if (trainHeld == true)
         {
             trackAreaController.previousTarget = trackAreaController.currentTarget;
-            trackAreaController.currentTarget = null;
             trackAreaController.trainSpeed = 0f;
         }
         else
         {
-            SetFirstMoveTowardsPosition();
-            trackAreaController.trainSpeed = 0.5f;
-            trackAreaController.currentTarget = trackAreaController.previousTarget;
-            transform.position = Vector3.MoveTowards(transform.position, trackAreaController.currentTarget.position, Time.deltaTime * trackAreaController.trainSpeed);
+            targetPosition = trackAreaController.currentTarget.position;
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * trackAreaController.trainSpeed);
+
+            if (Vector3.Distance(transform.position, targetPosition) <= minDistanceToTarget)
+            {
+                
+                if (targetPosition == startingPos.position)
+                {
+                    movementStarted = true;
+                    targetPosition = trackAreaController.currentTarget.position;
+                }
+
+            }
+            //SetFirstMoveTowardsPosition();
+
+            if (targetPosition != startingPos.position)
+            {
+                targetPosition = trackAreaController.currentTarget.position;
+            }
+
         }
     }
 
@@ -42,13 +70,13 @@ public class TrainController : MonoBehaviour
         }
     }
 
-    void SetFirstMoveTowardsPosition()
-    {
-        if (movementStarted == false && trainHeld != true)
-        {
-            trackAreaController.currentTarget = trackAreaController.testingTarget;
-            trackAreaController.previousTarget = trackAreaController.currentTarget;
-            movementStarted = true;
-        }
-    }
+    //void SetFirstMoveTowardsPosition()
+    //{
+        //if (movementStarted == false && trainHeld != true)
+        //{
+            //trackAreaController.currentTarget = trackAreaController.testingTarget;
+            //trackAreaController.previousTarget = trackAreaController.currentTarget;
+            //movementStarted = true;
+        //}
+    //}
 }

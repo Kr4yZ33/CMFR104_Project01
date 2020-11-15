@@ -8,8 +8,6 @@ public class TrackAreaController : MonoBehaviour
     public Transform previousTarget;
     public Transform initialTarget;
 
-    public Transform testingTarget;
-
     public float trainSpeed = 0.5f;
 
     // Update is called once per frame

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WaypointControllerTrackA : MonoBehaviour
 {
-    public TrackAreaController tracAreaController;
+    public TrackAreaController trackAreaController;
 
     public bool trainPassingTransform;
 
@@ -14,18 +14,17 @@ public class WaypointControllerTrackA : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        if (trainPassingTransform == true)
+        {
+            return;
+
+        }
+
         if (other.CompareTag("Train"))
         {
+            trackAreaController.previousTarget = a;
+            trackAreaController.currentTarget = a2;
             trainPassingTransform = true;
-            if (tracAreaController.currentTarget.name == "A" && tracAreaController.initialTarget.name == "A1")
-            {
-                tracAreaController.previousTarget = a;
-                tracAreaController.currentTarget = a2;
-
-                transform.position = Vector3.MoveTowards(transform.position, tracAreaController.currentTarget.position, Time.deltaTime * tracAreaController.trainSpeed);
-
-                trainPassingTransform = false;
-            }
         }
     }
 
@@ -33,7 +32,7 @@ public class WaypointControllerTrackA : MonoBehaviour
     {
         if (other.CompareTag("Train"))
         {
-            trainPassingTransform = true;
+            trainPassingTransform = false;
         }
     }
 }

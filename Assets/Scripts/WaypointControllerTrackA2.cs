@@ -4,29 +4,28 @@ using UnityEngine;
 
 public class WaypointControllerTrackA2 : MonoBehaviour
 {
-    public TrackAreaController tracAreaController;
+    public TrackAreaController trackAreaController;
 
     public bool trainPassingTransform;
 
+    public Transform b1;
     public Transform a;
     public Transform a2;
 
-    public Transform testingTarget;
-
     void OnTriggerEnter(Collider other)
     {
+        if (trainPassingTransform == true)
+        {
+            return;
+
+        }
+
         if (other.CompareTag("Train"))
         {
+            trackAreaController.previousTarget = a2;
+            //tracAreaController.currentVector = locate closet tranform tagged as edge that does not have the bool for passing train == true
+            trackAreaController.currentTarget = b1;
             trainPassingTransform = true;
-            if (tracAreaController.currentTarget.name == "A2" && tracAreaController.initialTarget.name == "A1")
-            {
-                tracAreaController.previousTarget = a2;
-                //tracAreaController.currentVector = locate closet tranform tagged as edge that does not have the bool for passing train == true
-
-                transform.position = Vector3.MoveTowards(transform.position, tracAreaController.currentTarget.position, Time.deltaTime * tracAreaController.trainSpeed);
-
-                trainPassingTransform = false;
-            }
         }
     }
 
@@ -34,7 +33,7 @@ public class WaypointControllerTrackA2 : MonoBehaviour
     {
         if (other.CompareTag("Train"))
         {
-            trainPassingTransform = true;
+            trainPassingTransform = false;
         }
     }
 }
