@@ -6,7 +6,6 @@ public class TrackAreaController : MonoBehaviour
 {
     public Transform currentTarget;
     public Transform previousTarget;
-    public Transform initialTarget;
 
     public float trainSpeed = 0.5f;
 

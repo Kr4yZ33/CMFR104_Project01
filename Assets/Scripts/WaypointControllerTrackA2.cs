@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class WaypointControllerTrackA2 : MonoBehaviour
 {
-    public TrackAreaController trackAreaController;
+    public TrackAreaController trackAreaController; // reference to the TrackAreaController script
 
     public bool trainPassingTransform;
 
-    public Transform b1;
+    public Transform closestEdge;
     public Transform a;
     public Transform a2;
 
@@ -22,10 +22,19 @@ public class WaypointControllerTrackA2 : MonoBehaviour
 
         if (other.CompareTag("Train"))
         {
-            trackAreaController.previousTarget = a2;
-            //tracAreaController.currentVector = locate closet tranform tagged as edge that does not have the bool for passing train == true
-            trackAreaController.currentTarget = b1;
-            trainPassingTransform = true;
+            if(trackAreaController.previousTarget != a)
+            {
+                trackAreaController.previousTarget = a2;
+                trackAreaController.currentTarget = a;
+                trainPassingTransform = true;
+            }
+            else
+            {
+                trackAreaController.previousTarget = a2;
+                //tracAreaController.currentVector = locate closet tranform tagged as edge that does not have the bool for passing train == true
+                trackAreaController.currentTarget = closestEdge;
+                trainPassingTransform = true;
+            }
         }
     }
 

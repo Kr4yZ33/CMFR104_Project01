@@ -8,7 +8,8 @@ public class WaypointControllerTrackC2 : MonoBehaviour
 
     public bool trainPassingTransform;
 
-    public Transform c1;
+
+    public Transform closestEdge;
     public Transform c;
     public Transform c2;
 
@@ -22,10 +23,18 @@ public class WaypointControllerTrackC2 : MonoBehaviour
 
         if (other.CompareTag("Train"))
         {
-            trackAreaController.previousTarget = c;
-            //tracAreaController.currentVector = locate closet tranform tagged as edge that does not have the bool for passing train == true
-
-            trainPassingTransform = true;
+            if (trackAreaController.previousTarget != c)
+            {
+                trackAreaController.currentTarget = c;
+                trackAreaController.previousTarget = c2;
+                trainPassingTransform = true;
+            }
+            else
+            {
+                trackAreaController.previousTarget = c2;
+                trackAreaController.currentTarget = closestEdge;
+                trainPassingTransform = true;
+            }
         }
     }
 

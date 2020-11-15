@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WaypointControllerTrackA : MonoBehaviour
 {
-    public TrackAreaController trackAreaController;
+    public TrackAreaController trackAreaController; // reference to the TrackAreaController script
 
     public bool trainPassingTransform;
 
@@ -22,9 +22,18 @@ public class WaypointControllerTrackA : MonoBehaviour
 
         if (other.CompareTag("Train"))
         {
-            trackAreaController.previousTarget = a;
-            trackAreaController.currentTarget = a2;
-            trainPassingTransform = true;
+            if(trackAreaController.previousTarget == a2)
+            {
+                trackAreaController.previousTarget = a;
+                trackAreaController.currentTarget = a1;
+                trainPassingTransform = true;
+            }
+            else
+            {
+                trackAreaController.previousTarget = a;
+                trackAreaController.currentTarget = a2;
+                trainPassingTransform = true;
+            }
         }
     }
 

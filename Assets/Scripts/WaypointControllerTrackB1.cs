@@ -4,26 +4,35 @@ using UnityEngine;
 
 public class WaypointControllerTrackB1 : MonoBehaviour
 {
-    public TrackAreaController tracAreaController;
+    public TrackAreaController trackAreaController; // reference to the TrackAreaController script
 
     public bool trainPassingTransform;
 
+    public Transform closestEdge;
     public Transform b;
     public Transform b1;
 
     void OnTriggerEnter(Collider other)
     {
+        if (trainPassingTransform == true)
+        {
+            return;
+
+        }
         if (other.CompareTag("Train"))
         {
-            trainPassingTransform = true;
-            if (tracAreaController.currentTarget == b1)
-            {
-                tracAreaController.previousTarget = b1;
-                tracAreaController.currentTarget = b;
-                tracAreaController.initialTarget = b1;
 
-                transform.position = Vector3.MoveTowards(transform.position, tracAreaController.currentTarget.position, Time.deltaTime * tracAreaController.trainSpeed);
-                trainPassingTransform = false;
+            if (trackAreaController.previousTarget != b)
+            {
+                trackAreaController.previousTarget = b1;
+                trackAreaController.currentTarget = b;
+                trainPassingTransform = true;
+            }
+            else
+            {
+                trackAreaController.previousTarget = b1;
+                trackAreaController.currentTarget = closestEdge;
+                trainPassingTransform = true;
             }
         }
     }
@@ -32,7 +41,7 @@ public class WaypointControllerTrackB1 : MonoBehaviour
     {
         if (other.CompareTag("Train"))
         {
-            trainPassingTransform = true;
+            trainPassingTransform = false;
         }
     }
 }

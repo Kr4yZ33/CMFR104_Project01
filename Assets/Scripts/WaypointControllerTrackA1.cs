@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class WaypointControllerTrackA1 : MonoBehaviour
 {
-    public TrackAreaController trackAreaController;
+    public TrackAreaController trackAreaController; // reference to the TrackAreaController script
 
     public bool trainPassingTransform;
 
+    public Transform closestEdge;
     public Transform a;
     public Transform a1;
 
@@ -20,13 +21,20 @@ public class WaypointControllerTrackA1 : MonoBehaviour
         }
         if (other.CompareTag("Train"))
         {
-            trackAreaController.previousTarget = a1;
-            trackAreaController.currentTarget = a;
-            trackAreaController.initialTarget = a1;
-            trainPassingTransform = true;
+
+            if (trackAreaController.previousTarget != a)
+            {
+                trackAreaController.previousTarget = a1;
+                trackAreaController.currentTarget = a;
+                trainPassingTransform = true;
+            }
+            else
+            {
+                trackAreaController.previousTarget = a1;
+                trackAreaController.currentTarget = closestEdge;
+                trainPassingTransform = true;
+            }
         }
-
-
     }
 
     void OnTriggerExit(Collider other)
