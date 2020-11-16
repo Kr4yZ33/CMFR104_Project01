@@ -29,6 +29,10 @@ TagManager:
   - GrassSpawn
   - TreeMultiSpawn
   - TrainStation
+  - TilePlatform
+  - Ground
+  - PortalEntry
+  - PortalExit
   layers:
   - Default
   - TransparentFX
@@ -46,8 +50,8 @@ TagManager:
   - Suimono_Water
   - Suimono_Depth
   - Suimono_Screen
-  - 
-  - 
+  - PlayerHammer
+  - LargePlayer
   - 
   - 
   - 
