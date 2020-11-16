@@ -5,7 +5,7 @@ using UnityEngine;
 public class TrainController : MonoBehaviour
 {
     public bool trainHeld;
-    public bool movementStarted;
+    //public bool movementStarted;
     public bool edgeTransition;
     
     public Transform startingPos;
@@ -54,16 +54,16 @@ public class TrainController : MonoBehaviour
             trainSpeed = 0.5f;
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * trainSpeed);
 
-            if (Vector3.Distance(transform.position, targetPosition) <= minDistanceToTarget)
-            {
+            //if (Vector3.Distance(transform.position, targetPosition) <= minDistanceToTarget)
+            //{
                 
-                if (targetPosition == startingPos.position)
-                {
-                    movementStarted = true;
-                    targetPosition = currentTarget.position;
-                }
+                //if (targetPosition == startingPos.position)
+                //{
+                    //movementStarted = true;
+                    //targetPosition = currentTarget.position;
+                //}
 
-            }
+            //}
             //SetFirstMoveTowardsPosition();
 
             if (targetPosition != startingPos.position)

@@ -21,7 +21,6 @@ public class WaypointControllerTrackA2 : MonoBehaviour
         }
         if (other.CompareTag("Train"))
         {
-
             if (trainController.currentTarget == trainController.startingPos) // This is the first piece of track the train has hit since being placed
             {
                 trainController.previousTarget = a2;
@@ -36,9 +35,9 @@ public class WaypointControllerTrackA2 : MonoBehaviour
                 trainController.currentTarget = a1;
                 trainPassingTransform = true;
             }
-            else
+            if (trainController.previousTarget == a1)
             {
-                trainController.previousTarget = a1;
+                trainController.previousTarget = a2;
                 trainController.currentTarget = closestEdge;
                 trainController.edgeTransition = true;
                 trainPassingTransform = true;

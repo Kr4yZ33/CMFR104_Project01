@@ -8,6 +8,7 @@ public class WaypointControllerStationS : MonoBehaviour
 
     public bool trainPassingTransform;
 
+    public Transform s2;
     public Transform s1;
     public Transform s;
 
@@ -20,9 +21,26 @@ public class WaypointControllerStationS : MonoBehaviour
         }
         if (other.CompareTag("Train"))
         {
-            trainController.previousTarget = s;
-            trainController.currentTarget = s1;
-            trainPassingTransform = true;
+            if (trainController.currentTarget == trainController.startingPos)
+            {
+                trainController.previousTarget = s;
+                trainController.currentTarget = s1;
+                trainPassingTransform = true;
+            }
+
+            if (trainController.previousTarget == s1)
+            {
+                trainController.previousTarget = s;
+                trainController.currentTarget = s2;
+                trainPassingTransform = true;
+            }
+
+            if (trainController.previousTarget == s2)
+            {
+                trainController.previousTarget = s;
+                trainController.currentTarget = s1;
+                trainPassingTransform = true;
+            }
         }
     }
 

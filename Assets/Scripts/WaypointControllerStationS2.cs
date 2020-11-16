@@ -9,6 +9,7 @@ public class WaypointControllerStationS2 : MonoBehaviour
     public bool trainPassingTransform;
 
     public Transform closestEdge;
+    public Transform s;
     public Transform s1;
     public Transform s2;
 
@@ -21,27 +22,40 @@ public class WaypointControllerStationS2 : MonoBehaviour
         }
         if (other.CompareTag("Train"))
         {
-            if (trainController.currentTarget == closestEdge) // This is the first piece of track the train has hit since being placed
+            if (trainPassingTransform == true)
             {
-                trainController.previousTarget = s1;
-                trainController.currentTarget = s2;
-                trainController.edgeTransition = true;
-                trainPassingTransform = true;
-            }
+                return;
 
-            if (trainController.edgeTransition == true)
-            {
-                trainController.edgeTransition = false;
-                trainController.previousTarget = s1;
-                trainController.currentTarget = s2;
-                trainPassingTransform = true;
             }
-            else
+            if (other.CompareTag("Train"))
             {
-                trainController.previousTarget = s2;
-                trainController.currentTarget = closestEdge;
-                trainController.edgeTransition = true;
-                trainPassingTransform = true;
+                if (trainPassingTransform == true)
+                {
+                    return;
+                }
+                if (trainController.previousTarget == s)
+                {
+                    trainController.previousTarget = s2;
+                    trainController.currentTarget = closestEdge;
+                    trainController.edgeTransition = true;
+                    trainPassingTransform = true;
+                }
+
+                if (trainController.edgeTransition == true && trainController.previousTarget != s2)
+                {
+                    trainController.edgeTransition = false;
+                    trainController.previousTarget = s2;
+                    trainController.currentTarget = s;
+                    trainPassingTransform = true;
+                }
+
+                if (trainController.previousTarget == s1)
+                {
+                    trainController.previousTarget = s2;
+                    trainController.currentTarget = closestEdge;
+                    trainController.edgeTransition = true;
+                    trainPassingTransform = true;
+                } 
             }
         }
     }

@@ -22,7 +22,13 @@ public class WaypointControllerStationS1 : MonoBehaviour
         }
         if (other.CompareTag("Train"))
         {
-            if (trainController.previousTarget == s) // This is the first piece of track the train has hit since being placed
+            
+
+            if (trainPassingTransform == true)
+            {
+                return;
+            }
+            if (trainController.previousTarget == s)
             {
                 trainController.previousTarget = s1;
                 trainController.currentTarget = closestEdge;
@@ -30,20 +36,17 @@ public class WaypointControllerStationS1 : MonoBehaviour
                 trainPassingTransform = true;
             }
 
-            if (trainPassingTransform == true)
-            {
-                return;
-            }
-            if (trainController.edgeTransition == true)
+            if (trainController.edgeTransition == true && trainController.previousTarget != s1)
             {
                 trainController.edgeTransition = false;
                 trainController.previousTarget = s1;
-                trainController.currentTarget = s2;
+                trainController.currentTarget = s;
                 trainPassingTransform = true;
             }
-            if (trainController.edgeTransition != true)
+
+            if (trainController.previousTarget == s2)
             {
-                trainController.previousTarget = s2;
+                trainController.previousTarget = s1;
                 trainController.currentTarget = closestEdge;
                 trainController.edgeTransition = true;
                 trainPassingTransform = true;
