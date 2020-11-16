@@ -307,7 +307,6 @@ MonoBehaviour:
   trainPassingTransform: 0
   closestEdge: {fileID: 876176642}
   s: {fileID: 743456989}
-  s1: {fileID: 401046674}
   s2: {fileID: 56291930}
 --- !u!54 &56291932
 Rigidbody:
@@ -1503,7 +1502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adf0913e8778b8244824cb2d413ff3f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackAreaController: {fileID: 2121638953}
+  trackAreaController: {fileID: 0}
   trainPassingTransform: 0
   closestEdge: {fileID: 35971302}
   c: {fileID: 1169615477}
@@ -2220,7 +2219,7 @@ GameObject:
   - component: {fileID: 384844460}
   m_Layer: 0
   m_Name: StationMesh (1)
-  m_TagString: HornSpawn
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2793,7 +2792,6 @@ MonoBehaviour:
   trainPassingTransform: 0
   closestEdge: {fileID: 830033515}
   s1: {fileID: 401046674}
-  s2: {fileID: 56291930}
   s: {fileID: 743456989}
 --- !u!54 &401046676
 Rigidbody:
@@ -4183,10 +4181,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.21
-  m_Height: 1.28
+  m_Radius: 0.27
+  m_Height: 0.85
   m_Direction: 1
-  m_Center: {x: 0, y: -0.11, z: 0}
+  m_Center: {x: 0, y: 0.21, z: 0}
 --- !u!23 &536553283
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4248,7 +4246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trainHeld: 0
   edgeTransition: 0
-  startingPos: {fileID: 743456989}
+  startingPos: {fileID: 1851757130}
   targetPosition: {x: 0, y: 0, z: 0}
   currentTarget: {fileID: 0}
   previousTarget: {fileID: 0}
@@ -4468,7 +4466,7 @@ GameObject:
   - component: {fileID: 634682530}
   m_Layer: 0
   m_Name: R2
-  m_TagString: ChangeDirection
+  m_TagString: TrackEdge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4930,9 +4928,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 743456989}
-  - component: {fileID: 743456991}
   - component: {fileID: 743456990}
   - component: {fileID: 743456992}
+  - component: {fileID: 743456991}
   m_Layer: 0
   m_Name: S
   m_TagString: TrackMiddle
@@ -4970,18 +4968,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!135 &743456991
-SphereCollider:
+--- !u!136 &743456991
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743456988}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.11
+  m_Radius: 0.02
+  m_Height: 0.53
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &743456992
 MonoBehaviour:
@@ -4997,6 +4996,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trainController: {fileID: 536553285}
   trainPassingTransform: 0
+  startPos: {fileID: 1851757130}
   s2: {fileID: 56291930}
   s1: {fileID: 401046674}
   s: {fileID: 743456989}
@@ -5828,9 +5828,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 830033515}
-  - component: {fileID: 830033518}
   - component: {fileID: 830033517}
   - component: {fileID: 830033516}
+  - component: {fileID: 830033518}
   m_Layer: 0
   m_Name: A2
   m_TagString: TrackEdge
@@ -5972,7 +5972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f05599852d8aff4a8074a6118aa8799, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackAreaController: {fileID: 2121638953}
+  trackAreaController: {fileID: 0}
   trainPassingTransform: 0
   closestEdge: {fileID: 105275184}
   c: {fileID: 1169615477}
@@ -7480,7 +7480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3991a42d0114cc644b4bc8cd98febad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackAreaController: {fileID: 2121638953}
+  trackAreaController: {fileID: 0}
   trainPassingTransform: 0
   c: {fileID: 1169615477}
   c1: {fileID: 845658622}
@@ -7827,7 +7827,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227082664}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.587, y: -0.07000008, z: 0}
+  m_LocalPosition: {x: -1.395, y: -0.07000008, z: -0.243}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4004523657396715727}
@@ -7844,7 +7844,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.21
+  m_Radius: 0.11
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1227082667
 Rigidbody:
@@ -7876,7 +7876,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trainController: {fileID: 536553285}
   trainPassingTransform: 0
-  closestEdge: {fileID: 0}
+  closestEdge: {fileID: 1658694166}
   b1: {fileID: 1227082665}
   b2: {fileID: 105275184}
 --- !u!1 &1227499388
@@ -7888,9 +7888,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1227499389}
-  - component: {fileID: 1227499392}
   - component: {fileID: 1227499391}
   - component: {fileID: 1227499390}
+  - component: {fileID: 1227499392}
   m_Layer: 0
   m_Name: A1
   m_TagString: TrackEdge
@@ -7906,7 +7906,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227499388}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.88, y: 0.12, z: -0.718}
+  m_LocalPosition: {x: -0.99, y: 0.12, z: -0.718}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 372454310}
@@ -8092,7 +8092,7 @@ GameObject:
   - component: {fileID: 1288642434}
   m_Layer: 0
   m_Name: R1
-  m_TagString: ChangeDirection
+  m_TagString: TrackEdge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10311,7 +10311,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trainController: {fileID: 536553285}
   trainPassingTransform: 0
-  closestEdge: {fileID: 401046674}
+  closestEdge: {fileID: 1227082665}
   a1: {fileID: 876176642}
   a2: {fileID: 1658694166}
 --- !u!1 &1677366649 stripped
@@ -11071,6 +11071,36 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1851757129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1851757130}
+  m_Layer: 0
+  m_Name: StartPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1851757130
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851757129}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.19, y: 0.12, z: -0.746}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2003971799}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1864314294
@@ -12538,6 +12568,7 @@ Transform:
   - {fileID: 401046674}
   - {fileID: 56291930}
   - {fileID: 743456989}
+  - {fileID: 1851757130}
   m_Father: {fileID: 1557006747}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13107,7 +13138,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2121638954}
-  - component: {fileID: 2121638953}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -13115,21 +13145,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2121638953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121638952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e73012eb768a554ea298badb2de94f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentTarget: {fileID: 0}
-  previousTarget: {fileID: 0}
-  trainSpeed: 0.5
 --- !u!4 &2121638954
 Transform:
   m_ObjectHideFlags: 0

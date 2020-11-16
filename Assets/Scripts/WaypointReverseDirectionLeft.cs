@@ -22,7 +22,6 @@ public class WaypointReverseDirectionLeft : MonoBehaviour
         {
             trainController.previousTarget = r2;
             trainController.currentTarget = closestEdge;
-            trainController.edgeTransition = true;
             trainPassingTransform = true;
         }
     }

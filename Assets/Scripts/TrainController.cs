@@ -81,6 +81,11 @@ public class TrainController : MonoBehaviour
         {
             trainHeld = true;
         }
+
+        if(other.CompareTag("TrackEdge"))
+        {
+            edgeTransition = true;
+        }
     }
 
     void OnTriggerExit(Collider other)
@@ -88,6 +93,11 @@ public class TrainController : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             trainHeld = false;
+        }
+
+        if (other.CompareTag("TrackEdge"))
+        {
+            edgeTransition = false;
         }
     }
 

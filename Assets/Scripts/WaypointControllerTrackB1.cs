@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WaypointControllerTrackB1 : MonoBehaviour
 {
-    public TrainController trainController; // reference to the TrackAreaController script
+    public TrainController trainController; // reference to the TrainController script
 
     public bool trainPassingTransform;
 
@@ -21,25 +21,16 @@ public class WaypointControllerTrackB1 : MonoBehaviour
         }
         if (other.CompareTag("Train"))
         {
-            if (trainController.currentTarget == trainController.startingPos) // This is the first piece of track the train has hit since being placed
+            if (trainController.previousTarget != b2)
             {
                 trainController.previousTarget = b1;
                 trainController.currentTarget = b2;
                 trainPassingTransform = true;
             }
-
-            if (trainController.edgeTransition == true)
+            if (trainController.previousTarget == b2)
             {
-                trainController.edgeTransition = false;
                 trainController.previousTarget = b1;
-                trainController.currentTarget = b2;
-                trainPassingTransform = true;
-            }
-            else
-            {
-                trainController.previousTarget = b2;
                 trainController.currentTarget = closestEdge;
-                trainController.edgeTransition = true;
                 trainPassingTransform = true;
             }
         }

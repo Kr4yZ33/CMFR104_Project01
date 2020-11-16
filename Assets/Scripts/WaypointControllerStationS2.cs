@@ -10,7 +10,6 @@ public class WaypointControllerStationS2 : MonoBehaviour
 
     public Transform closestEdge;
     public Transform s;
-    public Transform s1;
     public Transform s2;
 
     void OnTriggerEnter(Collider other)
@@ -18,44 +17,21 @@ public class WaypointControllerStationS2 : MonoBehaviour
         if (trainPassingTransform == true)
         {
             return;
-
         }
         if (other.CompareTag("Train"))
         {
-            if (trainPassingTransform == true)
+            if (trainController.previousTarget != s)
             {
-                return;
-
+                trainController.previousTarget = s2;
+                trainController.currentTarget = s;
+                trainPassingTransform = true;
             }
-            if (other.CompareTag("Train"))
+
+            if (trainController.previousTarget == s)
             {
-                if (trainPassingTransform == true)
-                {
-                    return;
-                }
-                if (trainController.previousTarget == s)
-                {
-                    trainController.previousTarget = s2;
-                    trainController.currentTarget = closestEdge;
-                    trainController.edgeTransition = true;
-                    trainPassingTransform = true;
-                }
-
-                if (trainController.edgeTransition == true && trainController.previousTarget != s2)
-                {
-                    trainController.edgeTransition = false;
-                    trainController.previousTarget = s2;
-                    trainController.currentTarget = s;
-                    trainPassingTransform = true;
-                }
-
-                if (trainController.previousTarget == s1)
-                {
-                    trainController.previousTarget = s2;
-                    trainController.currentTarget = closestEdge;
-                    trainController.edgeTransition = true;
-                    trainPassingTransform = true;
-                } 
+                trainController.previousTarget = s2;
+                trainController.currentTarget = closestEdge;
+                trainPassingTransform = true;
             }
         }
     }
