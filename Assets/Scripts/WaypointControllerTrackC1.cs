@@ -4,53 +4,46 @@ using UnityEngine;
 
 public class WaypointControllerTrackC1 : MonoBehaviour
 {
-    public TrackAreaController trackAreaController; // reference to the TrackAreaController script
+    public TrainController trainController; // reference to the TrainController script
 
-    public bool trainPassingTransform; // bool to show if the train is passing the transform and allow us to stop the update function from running when it doesnt need to
+    public bool trainPassingTransform;
 
-    public Transform closestEdge; // reference to the transform or the closeses connected edge piece
-    public Transform c; // The middle transform of the track piece
-    public Transform c1; // The edge transform of the track piece
+    public Transform closestEdge;
+    public Transform c1;
+    public Transform c;
 
-    /// <summary>
-    /// Trigger Events detection to know where the train is coming from
-    /// and where it needs to be sent to next
-    /// </summary>
-    /// <param name="other"></param>
     void OnTriggerEnter(Collider other)
     {
         if (trainPassingTransform == true)
         {
-            return; // exit script
+            return;
 
         }
 
-        if (other.CompareTag("Train")) // if the thing colliding with us has the tag Train
+        if (other.CompareTag("Train"))
         {
-            if(trackAreaController.previousTarget != c) // if the train was not coming from the centre
+
+            if (trainController.previousTarget != c)
             {
-                trackAreaController.currentTarget = c; // set the current target to the centre
-                trackAreaController.previousTarget = c1; // set the previous target to this transform
-                trainPassingTransform = true; // set the bool for trainPassing to true
+                trainController.previousTarget = c1;
+                trainController.currentTarget = c;
+                trainPassingTransform = true;
             }
-            else // otherwise
+
+            if (trainController.previousTarget == c)
             {
-                trackAreaController.previousTarget = c1; // set the pervious target to this transform
-                trackAreaController.currentTarget = closestEdge; // set the current target to the closest edge transform
-                trainPassingTransform = true; // set the bool for trainPassing to true
+                trainController.previousTarget = c1;
+                trainController.currentTarget = closestEdge;
+                trainPassingTransform = true;
             }
         }
     }
 
-    /// <summary>
-    /// When the object exits my collider
-    /// </summary>
-    /// <param name="other"></param>
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Train")) // if the object has the tag Train
+        if (other.CompareTag("Train"))
         {
-            trainPassingTransform = false; // set the trainPassing bool to false.
+            trainPassingTransform = false;
         }
     }
 }

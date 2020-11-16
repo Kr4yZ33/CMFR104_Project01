@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class WaypointControllerTrackC2 : MonoBehaviour
 {
-    public TrackAreaController trackAreaController;
+    public TrainController trainController; // reference to the TrainController script
 
     public bool trainPassingTransform;
-
 
     public Transform closestEdge;
     public Transform c;
@@ -18,21 +17,20 @@ public class WaypointControllerTrackC2 : MonoBehaviour
         if (trainPassingTransform == true)
         {
             return;
-
         }
-
         if (other.CompareTag("Train"))
         {
-            if (trackAreaController.previousTarget != c)
+            if (trainController.previousTarget != c)
             {
-                trackAreaController.currentTarget = c;
-                trackAreaController.previousTarget = c2;
+                trainController.previousTarget = c2;
+                trainController.currentTarget = c;
                 trainPassingTransform = true;
             }
-            else
+
+            if (trainController.previousTarget == c)
             {
-                trackAreaController.previousTarget = c2;
-                trackAreaController.currentTarget = closestEdge;
+                trainController.previousTarget = c2;
+                trainController.currentTarget = closestEdge;
                 trainPassingTransform = true;
             }
         }
