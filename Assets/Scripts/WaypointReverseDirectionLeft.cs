@@ -5,11 +5,17 @@ using UnityEngine;
 public class WaypointReverseDirectionLeft : MonoBehaviour
 {
     public TrainController trainController; // reference to the TrainController script
+    public TrackSnapConnection trackSnapConnection;
 
     public bool trainPassingTransform;
 
     public Transform closestEdge;
     public Transform r2;
+
+    private void Update()
+    {
+        closestEdge = trackSnapConnection.closestEdge;
+    }
 
     void OnTriggerEnter(Collider other)
     {
@@ -31,6 +37,7 @@ public class WaypointReverseDirectionLeft : MonoBehaviour
         if (other.CompareTag("Train"))
         {
             trainPassingTransform = false;
+            closestEdge = null;
         }
     }
 }

@@ -5,12 +5,19 @@ using UnityEngine;
 public class WaypointControllerTrackC1 : MonoBehaviour
 {
     public TrainController trainController; // reference to the TrainController script
+    public TrackSnapConnection trackSnapConnection;
 
     public bool trainPassingTransform;
 
     public Transform closestEdge;
     public Transform c1;
+    public Transform c2;
     public Transform c;
+
+    private void Update()
+    {
+        closestEdge = trackSnapConnection.closestEdge;
+    }
 
     void OnTriggerEnter(Collider other)
     {
@@ -19,17 +26,14 @@ public class WaypointControllerTrackC1 : MonoBehaviour
             return;
 
         }
-
         if (other.CompareTag("Train"))
         {
-
             if (trainController.previousTarget != c)
             {
                 trainController.previousTarget = c1;
                 trainController.currentTarget = c;
                 trainPassingTransform = true;
             }
-
             if (trainController.previousTarget == c)
             {
                 trainController.previousTarget = c1;
@@ -44,6 +48,7 @@ public class WaypointControllerTrackC1 : MonoBehaviour
         if (other.CompareTag("Train"))
         {
             trainPassingTransform = false;
+            closestEdge = null;
         }
     }
 }
