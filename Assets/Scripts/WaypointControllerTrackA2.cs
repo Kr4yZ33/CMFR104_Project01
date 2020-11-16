@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class WaypointControllerTrackA2 : MonoBehaviour
 {
-    public TrackAreaController trackAreaController; // reference to the TrackAreaController script
+    public TrainController trainController; // reference to the TrainController script
 
     public bool trainPassingTransform;
 
     public Transform closestEdge;
-    public Transform a;
+    public Transform a1;
     public Transform a2;
 
     void OnTriggerEnter(Collider other)
@@ -19,20 +19,28 @@ public class WaypointControllerTrackA2 : MonoBehaviour
             return;
 
         }
-
         if (other.CompareTag("Train"))
         {
-            if(trackAreaController.previousTarget != a)
+
+            if (trainController.currentTarget == trainController.startingPos) // This is the first piece of track the train has hit since being placed
             {
-                trackAreaController.previousTarget = a2;
-                trackAreaController.currentTarget = a;
+                trainController.previousTarget = a2;
+                trainController.currentTarget = a1;
+                trainPassingTransform = true;
+            }
+
+            if (trainController.edgeTransition == true)
+            {
+                trainController.edgeTransition = false;
+                trainController.previousTarget = a2;
+                trainController.currentTarget = a1;
                 trainPassingTransform = true;
             }
             else
             {
-                trackAreaController.previousTarget = a2;
-                //tracAreaController.currentVector = locate closet tranform tagged as edge that does not have the bool for passing train == true
-                trackAreaController.currentTarget = closestEdge;
+                trainController.previousTarget = a1;
+                trainController.currentTarget = closestEdge;
+                trainController.edgeTransition = true;
                 trainPassingTransform = true;
             }
         }

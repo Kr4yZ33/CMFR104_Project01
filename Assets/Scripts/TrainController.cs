@@ -4,34 +4,55 @@ using UnityEngine;
 
 public class TrainController : MonoBehaviour
 {
-    public TrackAreaController trackAreaController;
     public bool trainHeld;
     public bool movementStarted;
-
+    public bool edgeTransition;
+    
     public Transform startingPos;
+    public Vector3 targetPosition; // reference to our target position
+    public Transform currentTarget;
+    public Transform previousTarget;
 
     public float minDistanceToTarget = 0.1f;
+    public float trainSpeed = 0.5f;
 
-    public Vector3 targetPosition; // reference to our target position
-    
     // Start is called before the first frame update
     void Start()
     {
         targetPosition = startingPos.position;
         transform.position = targetPosition;
+            
+        if(currentTarget == null)
+        {
+            currentTarget = startingPos;
+        }   
     }
 
-   void Update()
+    void Update()
     {
+        if (currentTarget == null)
+        {
+            currentTarget = previousTarget;
+            if (previousTarget == null)
+            {
+                Debug.Log("Previous Target not set");
+
+            }
+
+        }
+
+
         if (trainHeld == true)
         {
-            trackAreaController.previousTarget = trackAreaController.currentTarget;
-            trackAreaController.trainSpeed = 0f;
+            previousTarget = currentTarget;
+            currentTarget = null;
+            trainSpeed = 0f;
         }
         else
         {
-            targetPosition = trackAreaController.currentTarget.position;
-            transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * trackAreaController.trainSpeed);
+            targetPosition = currentTarget.position;
+            trainSpeed = 0.5f;
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * trainSpeed);
 
             if (Vector3.Distance(transform.position, targetPosition) <= minDistanceToTarget)
             {
@@ -39,7 +60,7 @@ public class TrainController : MonoBehaviour
                 if (targetPosition == startingPos.position)
                 {
                     movementStarted = true;
-                    targetPosition = trackAreaController.currentTarget.position;
+                    targetPosition = currentTarget.position;
                 }
 
             }
@@ -47,7 +68,7 @@ public class TrainController : MonoBehaviour
 
             if (targetPosition != startingPos.position)
             {
-                targetPosition = trackAreaController.currentTarget.position;
+                targetPosition = currentTarget.position;
             }
 
         }
