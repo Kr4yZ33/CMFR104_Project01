@@ -28,6 +28,7 @@ TagManager:
   - TrackAngleSpawn
   - GrassSpawn
   - TreeMultiSpawn
+  - TrainStation
   layers:
   - Default
   - TransparentFX

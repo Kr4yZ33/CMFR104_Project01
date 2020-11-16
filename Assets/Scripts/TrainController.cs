@@ -13,7 +13,7 @@ public class TrainController : MonoBehaviour
     public Transform currentTarget;
     public Transform previousTarget;
 
-    public float minDistanceToTarget = 0.1f;
+    public float minDistanceToTarget = 0.01f;
     public float trainSpeed = 0.5f;
 
     // Start is called before the first frame update
