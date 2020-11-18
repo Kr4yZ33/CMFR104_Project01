@@ -570,6 +570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7cb0998d59201342bb2e640acaff6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hapticsController: {fileID: 0}
   audioSource: {fileID: 0}
   trackConnectedClip: {fileID: 0}
   closestEdge: {fileID: 0}
@@ -1105,7 +1106,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &228469874 stripped
 GameObject:
@@ -1442,6 +1443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7cb0998d59201342bb2e640acaff6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hapticsController: {fileID: 1490276166}
   audioSource: {fileID: 2121638953}
   trackConnectedClip: {fileID: 8300000, guid: 2cda6d5d7e2de74499d7cd67eeee0807, type: 3}
   closestEdge: {fileID: 0}
@@ -1487,7 +1489,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &275566029
 GameObject:
@@ -3731,6 +3733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7cb0998d59201342bb2e640acaff6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hapticsController: {fileID: 0}
   audioSource: {fileID: 0}
   trackConnectedClip: {fileID: 0}
   closestEdge: {fileID: 0}
@@ -4071,6 +4074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7cb0998d59201342bb2e640acaff6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hapticsController: {fileID: 0}
   audioSource: {fileID: 0}
   trackConnectedClip: {fileID: 0}
   closestEdge: {fileID: 0}
@@ -4869,6 +4873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7cb0998d59201342bb2e640acaff6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hapticsController: {fileID: 0}
   audioSource: {fileID: 0}
   trackConnectedClip: {fileID: 0}
   closestEdge: {fileID: 0}
@@ -5434,12 +5439,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 722526304}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.31, y: 0, z: -64.44}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.6000669, y: 0.31643844, z: -0.9534664}
+  m_LocalScale: {x: 0.07891627, y: 0.07891627, z: 0.07891627}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 2121638954}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &727356514
 PrefabInstance:
@@ -6727,6 +6732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7cb0998d59201342bb2e640acaff6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hapticsController: {fileID: 0}
   audioSource: {fileID: 0}
   trackConnectedClip: {fileID: 0}
   closestEdge: {fileID: 0}
@@ -6801,6 +6807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7cb0998d59201342bb2e640acaff6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hapticsController: {fileID: 0}
   audioSource: {fileID: 0}
   trackConnectedClip: {fileID: 0}
   closestEdge: {fileID: 0}
@@ -7388,6 +7395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7cb0998d59201342bb2e640acaff6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hapticsController: {fileID: 1490276166}
   audioSource: {fileID: 2121638953}
   trackConnectedClip: {fileID: 8300000, guid: 2cda6d5d7e2de74499d7cd67eeee0807, type: 3}
   closestEdge: {fileID: 0}
@@ -7744,6 +7752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7cb0998d59201342bb2e640acaff6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hapticsController: {fileID: 1490276166}
   audioSource: {fileID: 2121638953}
   trackConnectedClip: {fileID: 8300000, guid: 2cda6d5d7e2de74499d7cd67eeee0807, type: 3}
   closestEdge: {fileID: 0}
@@ -8346,6 +8355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7cb0998d59201342bb2e640acaff6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hapticsController: {fileID: 0}
   audioSource: {fileID: 0}
   trackConnectedClip: {fileID: 0}
   closestEdge: {fileID: 0}
@@ -8380,6 +8390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7cb0998d59201342bb2e640acaff6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hapticsController: {fileID: 0}
   audioSource: {fileID: 0}
   trackConnectedClip: {fileID: 0}
   closestEdge: {fileID: 0}
@@ -9363,7 +9374,7 @@ Transform:
   - {fileID: 177693938}
   - {fileID: 1655583553}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: -179.789, z: 0}
 --- !u!114 &1160711834
 MonoBehaviour:
@@ -9377,7 +9388,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fd02c8b207fc204dbc62d8c6c119e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trackSnapConnection: {fileID: 0}
   trackConnect: {fileID: 8300000, guid: 2cda6d5d7e2de74499d7cd67eeee0807, type: 3}
+  trackConnected: 0
 --- !u!1 &1167406877
 GameObject:
   m_ObjectHideFlags: 0
@@ -9422,6 +9435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7cb0998d59201342bb2e640acaff6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hapticsController: {fileID: 0}
   audioSource: {fileID: 0}
   trackConnectedClip: {fileID: 0}
   closestEdge: {fileID: 0}
@@ -9677,7 +9691,7 @@ Transform:
   - {fileID: 705507995}
   - {fileID: 1341269443}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1204029157
 Mesh:
@@ -10055,7 +10069,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12237,6 +12251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1490276165}
   - component: {fileID: 1490276164}
+  - component: {fileID: 1490276166}
   m_Layer: 0
   m_Name: VibrationManager
   m_TagString: Untagged
@@ -12263,13 +12278,28 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490276163}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.31, y: 0, z: -64.44}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.6000669, y: 0.31643844, z: -0.9534664}
+  m_LocalScale: {x: 0.07891627, y: 0.07891627, z: 0.07891627}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 2121638954}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1490276166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490276163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fd02c8b207fc204dbc62d8c6c119e38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackSnapConnection: {fileID: 0}
+  trackConnect: {fileID: 8300000, guid: 2cda6d5d7e2de74499d7cd67eeee0807, type: 3}
+  trackConnected: 0
 --- !u!1 &1494733427
 GameObject:
   m_ObjectHideFlags: 0
@@ -12427,7 +12457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12555,7 +12585,7 @@ Transform:
   - {fileID: 1005461894}
   - {fileID: 1696082390}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1563897102
 PrefabInstance:
@@ -12708,6 +12738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7cb0998d59201342bb2e640acaff6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hapticsController: {fileID: 0}
   audioSource: {fileID: 0}
   trackConnectedClip: {fileID: 0}
   closestEdge: {fileID: 0}
@@ -12746,7 +12777,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fd02c8b207fc204dbc62d8c6c119e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trackSnapConnection: {fileID: 0}
   trackConnect: {fileID: 8300000, guid: 2cda6d5d7e2de74499d7cd67eeee0807, type: 3}
+  trackConnected: 0
 --- !u!114 &1604223017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12866,7 +12899,7 @@ Transform:
   - {fileID: 1053437530}
   - {fileID: 877105615}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: -179.789, z: 0}
 --- !u!43 &1606349639
 Mesh:
@@ -13075,6 +13108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7cb0998d59201342bb2e640acaff6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hapticsController: {fileID: 0}
   audioSource: {fileID: 0}
   trackConnectedClip: {fileID: 0}
   closestEdge: {fileID: 0}
@@ -13136,6 +13170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7cb0998d59201342bb2e640acaff6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hapticsController: {fileID: 1490276166}
   audioSource: {fileID: 2121638953}
   trackConnectedClip: {fileID: 8300000, guid: 2cda6d5d7e2de74499d7cd67eeee0807, type: 3}
   closestEdge: {fileID: 0}
@@ -13299,6 +13334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7cb0998d59201342bb2e640acaff6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hapticsController: {fileID: 0}
   audioSource: {fileID: 0}
   trackConnectedClip: {fileID: 0}
   closestEdge: {fileID: 0}
@@ -13920,6 +13956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7cb0998d59201342bb2e640acaff6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hapticsController: {fileID: 0}
   audioSource: {fileID: 0}
   trackConnectedClip: {fileID: 0}
   closestEdge: {fileID: 0}
@@ -14225,6 +14262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7cb0998d59201342bb2e640acaff6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hapticsController: {fileID: 0}
   audioSource: {fileID: 0}
   trackConnectedClip: {fileID: 0}
   closestEdge: {fileID: 0}
@@ -14302,7 +14340,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844177179}
   m_LocalRotation: {x: -0, y: 0.892217, z: -0, w: 0.45160705}
-  m_LocalPosition: {x: -0.948, y: -0.89000034, z: 0.0069999695}
+  m_LocalPosition: {x: -1.171, y: -0.89000034, z: -0.269}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 614403772}
@@ -15027,6 +15065,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7cb0998d59201342bb2e640acaff6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hapticsController: {fileID: 0}
   audioSource: {fileID: 0}
   trackConnectedClip: {fileID: 0}
   closestEdge: {fileID: 0}
@@ -15742,7 +15781,7 @@ Transform:
   - {fileID: 1842320774}
   - {fileID: 386862473}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1986321902
 GameObject:
@@ -16624,6 +16663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7cb0998d59201342bb2e640acaff6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hapticsController: {fileID: 0}
   audioSource: {fileID: 0}
   trackConnectedClip: {fileID: 0}
   closestEdge: {fileID: 0}
@@ -16751,7 +16791,9 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.9655, y: -4.0098, z: -52.358}
   m_LocalScale: {x: 12.6716585, y: 12.6716585, z: 12.6716585}
-  m_Children: []
+  m_Children:
+  - {fileID: 1490276165}
+  - {fileID: 722526307}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
