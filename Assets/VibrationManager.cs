@@ -10,13 +10,11 @@ public class VibrationManager : MonoBehaviour
     void Start()
     {
         if(singleton && singleton !=this)
-        {
             Destroy(this);
-        }
         else
-        {
+
             singleton = this;
-        }
+
     }
 
     public void TriggerVibration(AudioClip vibrationAudio, OVRInput.Controller controller)
@@ -39,7 +37,7 @@ public class VibrationManager : MonoBehaviour
 
         for (int i = 0; i < interation; i++)
         {
-            clip.WriteSample(i % frequency == 0 ? (byte)strength : (byte)0);
+            clip.WriteSample(i % frequency == 0 ? (byte) strength : (byte) 0);
         }
         
         if (controller == OVRInput.Controller.LTouch)

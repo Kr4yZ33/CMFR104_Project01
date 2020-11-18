@@ -8,40 +8,43 @@ public class TrackSnapConnection : MonoBehaviour
     public AudioClip trackConnectedClip;
     
     public Transform closestEdge;
-    public bool connectionClipPlayed;
+    //public bool connectionClipPlayed;
     public float volume = 0.5f;
+
+    private OVRGrabbable ovrGrabbable;
 
     private void Start()
     {
-        //ovrGrabbable = GetComponent<OVRGrabbable>();
+        ovrGrabbable = GetComponent<OVRGrabbable>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        //if(connectionClipPlayed == true)
+        //{
+            //return;
+        //}
+        
         if(other.gameObject.CompareTag("TrackEdge"))
         {
             closestEdge = other.gameObject.transform;
-            
-            if(connectionClipPlayed == true)
-            {
-                return;
-            }
-            else
-            {
-                
-                //VibrationManager.singleton.TriggerVibration(40, 2, 255 , ovrGrabbable.grabbedBy.GetController());
-
-                audioSource.PlayOneShot(trackConnectedClip, volume);
-                connectionClipPlayed = true;
-            }
+            audioSource.PlayOneShot(trackConnectedClip, volume);
+            PlayVibrationHaptics();
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    //private void OnTriggerExit(Collider other)
+    //{
+        //if (other.gameObject.CompareTag("TrackEdge"))
+        //{
+            //connectionClipPlayed = false;
+        //}
+    //}
+
+    void PlayVibrationHaptics()
     {
-        if (other.gameObject.CompareTag("TrackEdge"))
-        {
-            connectionClipPlayed = false;
-        }
+        VibrationManager.singleton.TriggerVibration(trackConnectedClip, ovrGrabbable.grabbedBy.GetController());
+        
+        //connectionClipPlayed = true;
     }
 }

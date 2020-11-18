@@ -53,6 +53,11 @@ public class OVRGrabber : MonoBehaviour
     protected Collider[] m_grabVolumes = null;
 
     // Should be OVRInput.Controller.LTouch or OVRInput.Controller.RTouch.
+    public OVRInput.Controller GetController()
+    {
+        return m_controller;
+    }
+    
     [SerializeField]
     protected OVRInput.Controller m_controller;
 
@@ -326,6 +331,34 @@ public class OVRGrabber : MonoBehaviour
         if (m_grabbedObj == null)
         {
             return;
+        }
+
+        // Set up offsets for grabbed object desired position relative to hand.
+        if (m_grabbedObj.snapPosition)
+        {
+            m_grabbedObjectPosOff = m_gripTransform.localPosition;
+            if (m_grabbedObj.snapOffset)
+            {
+                Vector3 snapOffset = m_grabbedObj.snapOffset.position;
+                if (m_controller == OVRInput.Controller.LTouch) snapOffset.x = -snapOffset.x;
+                m_grabbedObjectPosOff += snapOffset;
+            }
+        }
+        else
+        {
+            Vector3 relPos = m_grabbedObj.transform.position - transform.position;
+            relPos = Quaternion.Inverse(transform.rotation) * relPos;
+            m_grabbedObjectPosOff = relPos;
+        }
+
+        if (m_grabbedObj.snapOrientation)
+        {
+            m_grabbedObjectRotOff = m_gripTransform.localRotation;
+            if (m_grabbedObj.snapOffset)
+            {
+                m_grabbedObjectRotOff = m_grabbedObj.snapOffset.rotation * m_grabbedObjectRotOff;
+                if (m_controller == OVRInput.Controller.LTouch) m_grabbedObjectRotOff = Quaternion.Inverse(m_grabbedObjectRotOff);
+            }
         }
 
         Rigidbody grabbedRigidbody = m_grabbedObj.grabbedRigidbody;
