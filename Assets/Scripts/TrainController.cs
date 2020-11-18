@@ -7,7 +7,8 @@ public class TrainController : MonoBehaviour
     public bool trainHeld;
     //public bool movementStarted;
     public bool edgeTransition;
-    
+    public bool trainMeshFaceNextWaypoint;
+
     public Transform startingPos;
     public Vector3 targetPosition; // reference to our target position
     public Transform currentTarget;
@@ -77,6 +78,7 @@ public class TrainController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        
         if (other.CompareTag("Player"))
         {
             trainHeld = true;
@@ -85,6 +87,15 @@ public class TrainController : MonoBehaviour
         if(other.CompareTag("TrackEdge"))
         {
             edgeTransition = true;
+            
+            
+            if(trainMeshFaceNextWaypoint == true)
+            {
+                return;
+            }
+            trainMeshFaceNextWaypoint = true;
+            Invoke("TrainMeshFaceNextWaypoint()", 1);
+            return;
         }
     }
 
@@ -98,7 +109,13 @@ public class TrainController : MonoBehaviour
         if (other.CompareTag("TrackEdge"))
         {
             edgeTransition = false;
+            
         }
+    }
+
+    public void TrainMeshFaceNextWaypoint()
+    {
+        trainMeshFaceNextWaypoint = false;
     }
 
     //void SetFirstMoveTowardsPosition()
