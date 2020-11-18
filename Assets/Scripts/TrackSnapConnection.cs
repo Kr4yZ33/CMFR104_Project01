@@ -10,7 +10,7 @@ public class TrackSnapConnection : MonoBehaviour
     public AudioClip trackConnectedClip;
     
     public Transform closestEdge;
-    public float volume = 0.5f;
+    public float volume = 0.7f;
 
     private void OnTriggerEnter(Collider other)
     {

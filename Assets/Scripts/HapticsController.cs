@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class HapticsController : MonoBehaviour
 {
-    public TrackSnapConnection trackSnapConnection;
-
     OVRHapticsClip buzz;
     public AudioClip trackConnect;
     public bool trackConnected;
+    public bool trackConnectedRhand;
+    public bool trackConnectedLhand;
 
     // Start is called before the first frame update
     void Start()
@@ -18,11 +18,15 @@ public class HapticsController : MonoBehaviour
 
     private void Update()
     {
-        if(trackConnected == true)
+        if(trackConnectedRhand == true)
         {
-            OVRHaptics.LeftChannel.Mix(buzz);
             OVRHaptics.RightChannel.Mix(buzz);
         }
+
+        if (trackConnectedRhand == true)
+        {
+            OVRHaptics.LeftChannel.Mix(buzz);
+        } 
     }
 
     private void OnTriggerEnter(Collider hand)
@@ -32,6 +36,7 @@ public class HapticsController : MonoBehaviour
             if(OVRInput.Get(OVRInput.Button.PrimaryHandTrigger))
             {
                 OVRHaptics.LeftChannel.Mix(buzz);
+                trackConnectedLhand = true;
             }
         }
         if (hand.gameObject.CompareTag("RightHand"))
@@ -39,6 +44,7 @@ public class HapticsController : MonoBehaviour
             if (OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
             {
                 OVRHaptics.RightChannel.Mix(buzz);
+                trackConnectedRhand = true;
             }
         }
     }
@@ -47,10 +53,12 @@ public class HapticsController : MonoBehaviour
         if (hand.gameObject.CompareTag("LeftHand"))
         {
             OVRHaptics.LeftChannel.Mix(buzz);
+            trackConnectedLhand = false;
         }
         if (hand.gameObject.CompareTag("RightHand"))
         {
             OVRHaptics.RightChannel.Mix(buzz);
+            trackConnectedRhand = false;
         }
     }
 }
