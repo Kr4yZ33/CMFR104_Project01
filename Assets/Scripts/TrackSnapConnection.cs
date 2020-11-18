@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class TrackSnapConnection : MonoBehaviour
 {
-    public AudioManager audioManager;
+    public AudioSource audioSource;
+    public AudioClip trackConnectedClip;
     
     public Transform closestEdge;
-    public bool connectionClipPlayed = false;
-    public AudioClip trackConnectClip;
-    
+    public bool connectionClipPlayed;
+    public float volume = 0.5f;
+
     private void Start()
     {
         //ovrGrabbable = GetComponent<OVRGrabbable>();
@@ -25,13 +26,14 @@ public class TrackSnapConnection : MonoBehaviour
             {
                 return;
             }
+            else
+            {
+                
+                //VibrationManager.singleton.TriggerVibration(40, 2, 255 , ovrGrabbable.grabbedBy.GetController());
 
-            audioManager.PlayTrackConnectionClip();
-
-            //VibrationManager.singleton.TriggerVibration(trackConnectClip, ovrGrabbable.grabbedBy.GetController());
-            
-            connectionClipPlayed = true;
-
+                audioSource.PlayOneShot(trackConnectedClip, volume);
+                connectionClipPlayed = true;
+            }
         }
     }
 

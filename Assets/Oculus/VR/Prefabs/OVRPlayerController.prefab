@@ -657,7 +657,7 @@ MonoBehaviour:
   m_grabVolumes:
   - {fileID: 457932124}
   m_controller: 2
-  m_parentTransform: {fileID: 0}
+  m_parentTransform: {fileID: 462066}
   m_player: {fileID: 0}
 --- !u!54 &80942226
 Rigidbody:
@@ -811,7 +811,7 @@ MonoBehaviour:
   m_grabVolumes:
   - {fileID: 790152164}
   m_controller: 1
-  m_parentTransform: {fileID: 0}
+  m_parentTransform: {fileID: 462066}
   m_player: {fileID: 0}
 --- !u!54 &23016247
 Rigidbody:

@@ -7,14 +7,13 @@ public class TrainController : MonoBehaviour
     public bool trainHeld;
     //public bool movementStarted;
     public bool edgeTransition;
-    public bool trainMeshFaceNextWaypoint;
+    public bool trainMeshFaceNextWaypoint = false;
 
     public Transform startingPos;
     public Vector3 targetPosition; // reference to our target position
     public Transform currentTarget;
     public Transform previousTarget;
 
-    public float minDistanceToTarget = 0.01f;
     public float trainSpeed = 0.5f;
 
     // Start is called before the first frame update
@@ -87,15 +86,7 @@ public class TrainController : MonoBehaviour
         if(other.CompareTag("TrackEdge"))
         {
             edgeTransition = true;
-            
-            
-            if(trainMeshFaceNextWaypoint == true)
-            {
-                return;
-            }
-            trainMeshFaceNextWaypoint = true;
-            Invoke("TrainMeshFaceNextWaypoint()", 1);
-            return;
+            trainMeshFaceNextWaypoint = false;
         }
     }
 
@@ -109,13 +100,13 @@ public class TrainController : MonoBehaviour
         if (other.CompareTag("TrackEdge"))
         {
             edgeTransition = false;
-            
+            TrainMeshFaceNextWaypoint();
         }
     }
 
-    public void TrainMeshFaceNextWaypoint()
+    void TrainMeshFaceNextWaypoint()
     {
-        trainMeshFaceNextWaypoint = false;
+        trainMeshFaceNextWaypoint = true;
     }
 
     //void SetFirstMoveTowardsPosition()
