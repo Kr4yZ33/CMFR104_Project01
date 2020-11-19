@@ -61,4 +61,9 @@ public class HapticsController : MonoBehaviour
             trackConnectedRhand = false;
         }
     }
+
+    public void HoverEntryHaptic()
+    {
+        OVRHaptics.RightChannel.Mix(buzz);
+    }
 }

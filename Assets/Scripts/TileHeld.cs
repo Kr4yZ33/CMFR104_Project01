@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TileHeld : MonoBehaviour
 {
+    public HapticsController hapticsController;
+    
     public bool isHeld = false;
 
     public bool onBuildPlatform;
@@ -20,6 +22,7 @@ public class TileHeld : MonoBehaviour
 
         if(other.gameObject.CompareTag("Player"))
         {
+            hapticsController.HoverEntryHaptic();
             isHeld = true;
         }
     }
@@ -28,6 +31,7 @@ public class TileHeld : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            hapticsController.HoverEntryHaptic();
             isHeld = false;
         }
 
