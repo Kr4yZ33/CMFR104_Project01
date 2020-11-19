@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class TileTrainHorn : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    
+    public bool playedHornClip;
+    
+    private void OnTriggerEnter(Collider other)
     {
         
+        playedHornClip = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerExit(Collider other)
     {
-        
+        playedHornClip = false;
     }
 }
