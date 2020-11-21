@@ -5,14 +5,16 @@ using UnityEngine;
 public class TileHeld : MonoBehaviour
 {
     public HapticsController hapticsController;
-    
+    public BuildPlatformGridSnap buildPlatformGridSnap;
+
     public bool isHeld = false;
 
     public bool onBuildPlatform;
 
     public GameObject buildPlatform; // platform
 
-    
+    public Transform targetTransform;
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.CompareTag("TilePlatform"))
@@ -33,11 +35,18 @@ public class TileHeld : MonoBehaviour
         {
             hapticsController.HoverEntryHaptic();
             isHeld = false;
+            buildPlatformGridSnap.tileSnappedInPlace = false;
         }
 
         if (other.gameObject.CompareTag("TilePlatform"))
         {
             onBuildPlatform = false;
+        }
+
+        if (isHeld == false && onBuildPlatform == true)
+        {
+            buildPlatformGridSnap.targetTile = gameObject;
+            buildPlatformGridSnap.SnapTileInPlace();
         }
     }
 }

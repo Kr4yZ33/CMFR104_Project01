@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FollowingBeltScript : MonoBehaviour
-{
+{  
     public GameObject playerBeltTransform;
     public GameObject belt;
 
