@@ -3447,6 +3447,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &579742431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579742422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5dae8b56ac9c144bc5f2f97c506ee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerRespawnTransform: {fileID: 1979525162}
 --- !u!1 &599191804
 GameObject:
   m_ObjectHideFlags: 0
@@ -13344,25 +13357,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882563872}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.10802579, y: -42.53509, z: 0.4199977}
-  m_LocalScale: {x: 59.1872, y: 0.17045914, z: 59.1872}
+  m_LocalPosition: {x: -0.10802579, y: -109.4, z: 0.4199977}
+  m_LocalScale: {x: 112.899574, y: 0.17045914, z: 79.16288}
   m_Children: []
   m_Father: {fileID: 1981147378}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1882563877
-MonoBehaviour:
+--- !u!54 &1882563877
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882563872}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e5dae8b56ac9c144bc5f2f97c506ee7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerRespawnTransform: {fileID: 1979525162}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 3
 --- !u!1 &1883971032
 GameObject:
   m_ObjectHideFlags: 0

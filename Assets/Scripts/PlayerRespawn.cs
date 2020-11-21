@@ -8,10 +8,10 @@ public class PlayerRespawn : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("Player"))
+        if(other.gameObject.CompareTag("Respawn"))
         {
-            other.gameObject.transform.position = playerRespawnTransform.transform.position;
-            other.gameObject.transform.rotation = playerRespawnTransform.transform.rotation;
+            gameObject.transform.position = playerRespawnTransform.transform.position;
+            gameObject.transform.rotation = playerRespawnTransform.transform.rotation;
         }
     }
 }
