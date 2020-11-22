@@ -355,8 +355,10 @@ MonoBehaviour:
   assetGuid: 
   m_IsSelectable: 1
   m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 
+  m_SelectedEdges:
+  - a: 0
+    b: 0
+  m_SelectedVertices: 0000000000000000
 --- !u!1 &4410758511601256627
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,7 +386,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4410758511601256627}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.617, y: 0.03, z: -0.702}
+  m_LocalPosition: {x: 0.679, y: 0.03, z: -0.701}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4410758512461731761}
@@ -463,7 +465,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4410758511873177455}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.57, y: 0.02, z: -0.68}
+  m_LocalPosition: {x: -1.253, y: 0.02, z: -0.677}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4410758512461731761}
@@ -591,6 +593,8 @@ GameObject:
   - component: {fileID: 4410758512461731774}
   - component: {fileID: 4410758512461731773}
   - component: {fileID: 4410758512461731772}
+  - component: {fileID: 3065791440568843584}
+  - component: {fileID: 5447925092529285106}
   m_Layer: 18
   m_Name: ReverseDirectionPrefab
   m_TagString: ChangeDirection
@@ -605,9 +609,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4410758512461731762}
-  m_LocalRotation: {x: -0, y: 0.7086098, z: -0, w: 0.70560056}
+  m_LocalRotation: {x: 0, y: 0.7086108, z: 0, w: 0.7055996}
   m_LocalPosition: {x: -4.92, y: 9.48, z: -21.37}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.07891625, y: 0.07891627, z: 0.07891624}
   m_Children:
   - {fileID: 4410758511873177454}
   - {fileID: 4410758512329164640}
@@ -698,3 +702,40 @@ MonoBehaviour:
   trackConnected: 0
   trackConnectedRhand: 0
   trackConnectedLhand: 0
+--- !u!114 &3065791440568843584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4410758512461731762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c21128fadc7d2449b16577a13faa9f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hapticsController: {fileID: 4410758512461731772}
+  buildPlatformGridSnapController: {fileID: 0}
+  isHeld: 0
+  onBuildPlatform: 0
+  buildPlatform: {fileID: 0}
+  targetTransform: {fileID: 0}
+--- !u!114 &5447925092529285106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4410758512461731762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 1
+  m_snapOrientation: 1
+  m_snapOffset: {fileID: 0}
+  m_grabPoints:
+  - {fileID: 4410758512461731774}
+  m_materialColorField: 
