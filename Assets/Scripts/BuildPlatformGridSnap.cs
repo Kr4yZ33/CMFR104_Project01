@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BuildPlatformGridSnap : MonoBehaviour
 {
-    public BuildPlatformGridSnapController buildPlatformGridSnapController;
+    //public BuildPlatformGridSnapController buildPlatformGridSnapController;
     
     public GameObject targetTile;
     public bool tileSnappedInPlace;
@@ -13,12 +13,12 @@ public class BuildPlatformGridSnap : MonoBehaviour
 
     private void FixedUpdate()
     {
-        buildPlatformGridSnapController.targetTile = targetTile;
+        //buildPlatformGridSnapController.targetTile = targetTile;
         
-        if(buildPlatformGridSnapController.snapTile == true)
-        {
-            SnapTileInPlace();
-        }
+        //if(buildPlatformGridSnapController.snapTile == true)
+        //{
+            //SnapTileInPlace();
+        //}
     }
 
     public void SnapTileInPlace()
