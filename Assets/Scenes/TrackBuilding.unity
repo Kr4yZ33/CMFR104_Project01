@@ -1330,12 +1330,12 @@ Transform:
   - {fileID: 1039421805}
   - {fileID: 2130865725}
   - {fileID: 1103917219}
+  - {fileID: 1989957794}
   - {fileID: 1387879233}
   - {fileID: 2025317103}
-  - {fileID: 1989957794}
+  - {fileID: 900704601}
   - {fileID: 2034964298}
   - {fileID: 1956492704}
-  - {fileID: 900704601}
   - {fileID: 2060445894}
   - {fileID: 662362952}
   - {fileID: 2078404902}
@@ -8783,12 +8783,12 @@ Transform:
   - {fileID: 1234942593}
   - {fileID: 1907340878}
   - {fileID: 742285762}
+  - {fileID: 556144658}
   - {fileID: 7162723128304945572}
   - {fileID: 7808513050048459911}
   - {fileID: 691958757362206780}
-  - {fileID: 431518634951117527}
   - {fileID: 235325210}
-  - {fileID: 556144658}
+  - {fileID: 431518634951117527}
   - {fileID: 213864847}
   - {fileID: 1546848709}
   - {fileID: 454852731}
@@ -37369,6 +37369,21 @@ PrefabInstance:
       propertyPath: m_grabPoints.Array.data[0]
       value: 
       objectReference: {fileID: 927200186}
+    - target: {fileID: 6148430669186036108, guid: 8e51d9dfc6ad07b4d914c4fcdd9f27fd,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4c43cbad3e1fd8c48b074690dd2c0360, type: 3}
+    - target: {fileID: 6148430669186036108, guid: 8e51d9dfc6ad07b4d914c4fcdd9f27fd,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148430669186036108, guid: 8e51d9dfc6ad07b4d914c4fcdd9f27fd,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6148430669186036110, guid: 8e51d9dfc6ad07b4d914c4fcdd9f27fd,
         type: 3}
       propertyPath: startingPos
