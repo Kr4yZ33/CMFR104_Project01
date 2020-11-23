@@ -8,7 +8,6 @@ public class TrainController : MonoBehaviour
 
     public bool trainHeld;
     public bool edgeTransition;
-    public bool trainHorn;
 
     public Transform startingPos;
     public Vector3 targetPosition; // reference to our target position
@@ -27,11 +26,7 @@ public class TrainController : MonoBehaviour
 
     void Update()
     {
-        if(trainHorn == true)
-        {
-            PlayTrainHorn();
-        }
-        
+               
         if (trainHeld == true)
         {
             currentTarget = previousTarget;
@@ -49,7 +44,11 @@ public class TrainController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("HornSpawn"))
+        {
+            PlayTrainHorn();
+        }
+
         if (other.CompareTag("Player"))
         {
             trainHeld = true;
@@ -78,6 +77,5 @@ public class TrainController : MonoBehaviour
     void PlayTrainHorn()
     {
         audioManager.PlayHornClip();
-        trainHorn = false;
     }
 }
