@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class TrainController : MonoBehaviour
 {
+    public AudioManager audioManager;
 
     public bool trainHeld;
     public bool edgeTransition;
+    public bool trainHorn;
 
     public Transform startingPos;
     public Vector3 targetPosition; // reference to our target position
@@ -25,7 +27,11 @@ public class TrainController : MonoBehaviour
 
     void Update()
     {
-
+        if(trainHorn == true)
+        {
+            PlayTrainHorn();
+        }
+        
         if (trainHeld == true)
         {
             currentTarget = previousTarget;
@@ -67,5 +73,11 @@ public class TrainController : MonoBehaviour
         {
             edgeTransition = false;
         }
+    }
+
+    void PlayTrainHorn()
+    {
+        audioManager.PlayHornClip();
+        trainHorn = false;
     }
 }
