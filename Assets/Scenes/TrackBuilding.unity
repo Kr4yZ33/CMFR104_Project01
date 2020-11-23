@@ -725,7 +725,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 149361500}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.094, y: 0.58, z: 0.831}
+  m_LocalPosition: {x: -0.094, y: 0.58, z: 0.599}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5801463062257425336}
@@ -911,7 +911,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 166385388}
-  - component: {fileID: 166385389}
   m_Layer: 18
   m_Name: TrainMeshE
   m_TagString: Untagged
@@ -926,8 +925,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166385387}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.107, y: 0.26, z: -0.157}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.107, y: 0.26, z: 0.264}
   m_LocalScale: {x: 0.38626, y: 0.5786, z: 0.61872464}
   m_Children:
   - {fileID: 1763659235}
@@ -935,21 +934,7 @@ Transform:
   - {fileID: 463561724}
   m_Father: {fileID: 536553279}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &166385389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 166385387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30de0e845fe99df42a24130c17a10d50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trainController: {fileID: 927200188}
-  waypoint: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &184218059 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1870939126624920, guid: ce816f2e6abb0504092c23ed9b970dfd,
@@ -1396,7 +1381,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 275566029}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.91, y: 0.58, z: -0.515}
+  m_LocalPosition: {x: 0.714, y: 0.58, z: -0.515}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5801463062257425336}
@@ -4682,7 +4667,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656031848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.295, y: 0.58, z: -0.538}
+  m_LocalPosition: {x: 1.117, y: 0.58, z: -0.538}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5801463062257425336}
@@ -5855,7 +5840,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &791560609
 Transform:
   m_ObjectHideFlags: 0
@@ -6759,7 +6744,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845658621}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.022, y: 0.58, z: 0.365}
+  m_LocalPosition: {x: -0.022, y: 0.58, z: 0.193}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5801463062257425336}
@@ -7069,6 +7054,7 @@ GameObject:
   - component: {fileID: 927200188}
   - component: {fileID: 927200190}
   - component: {fileID: 927200189}
+  - component: {fileID: 927200185}
   m_Layer: 18
   m_Name: TrainE
   m_TagString: Train
@@ -7126,6 +7112,20 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 927200186}
+--- !u!114 &927200185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927200181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30de0e845fe99df42a24130c17a10d50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trainController: {fileID: 927200188}
+  waypoint: {fileID: 0}
 --- !u!65 &927200186
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8107,7 +8107,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1023395154}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.054, y: -0.039, z: -0.85}
+  m_LocalPosition: {x: -0.054, y: -0.039, z: -0.729}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4004523657396715727}
@@ -36018,7 +36018,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4410758511191967049}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.11, y: 0.285, z: -0.7}
+  m_LocalPosition: {x: 0.933, y: 0.285, z: -0.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4410758512378838399}
@@ -36388,7 +36388,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4410758511686263421}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.783, y: 0.234, z: -0.701}
+  m_LocalPosition: {x: 0.478, y: 0.234, z: -0.701}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4410758512378838399}
