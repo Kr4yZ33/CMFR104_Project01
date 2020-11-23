@@ -5,17 +5,17 @@ using UnityEngine;
 public class TrackSnapConnection : MonoBehaviour
 {
     public HapticsController hapticsController;
-    
+
     public AudioSource audioSource;
     public AudioClip trackConnectedClip;
-    
+
     public Transform closestEdge;
     public float volume = 0.7f;
 
     private void OnTriggerEnter(Collider other)
     {
-        
-        if(other.gameObject.CompareTag("TrackEdge"))
+
+        if (other.gameObject.CompareTag("TrackEdge"))
         {
             closestEdge = other.gameObject.transform;
             audioSource.PlayOneShot(trackConnectedClip, volume);
@@ -26,5 +26,10 @@ public class TrackSnapConnection : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         hapticsController.trackConnected = false;
+
+        if (other.gameObject.CompareTag("TrackEdge"))
+        {
+            closestEdge = null;
+        }
     }
 }

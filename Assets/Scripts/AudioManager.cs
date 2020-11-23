@@ -6,6 +6,7 @@ public class AudioManager : MonoBehaviour
 {
     public AudioSource audioSource; // Reference to our Audio Source
     public AudioClip bgm1; // reference to our game clip1
+    public AudioClip hornClip; // reference to our horn sound clip
     private AudioClip currentTrack; // the current track being played
     private AudioClip previousTrack; // the previous track that was played
     public float volume = 0.5f; // Reference to the volume of our scare shot clip (plays over game musice that is already playing)
@@ -22,6 +23,22 @@ public class AudioManager : MonoBehaviour
         }
         currentTrack = previousTrack; // set the current track to the previous track
         ChangeTrack(currentTrack); // play our previous track
+    }
+
+    /// <summary>
+    /// play the horn sound clip
+    /// </summary>
+    public void PlayHornClip()
+    {
+        // if there is no previous track
+        if (currentTrack == hornClip)
+        {
+            return;
+        }
+        else
+        {
+            audioSource.PlayOneShot(hornClip, volume);
+        }
     }
 
     /// <summary>

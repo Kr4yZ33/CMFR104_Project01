@@ -14,7 +14,7 @@ public struct Gesture
 
 public class GestureDetector : MonoBehaviour
 {
-    public float threshold = 0.1f;
+    public float threshold = 0.1f; // threshold of how different the poses have to be to original to register
     public OVRSkeleton skeleton;
     public List<Gesture> gestures; // list inside the Gesture struct
     public bool debugMode = true; // possible space might be used for other things 

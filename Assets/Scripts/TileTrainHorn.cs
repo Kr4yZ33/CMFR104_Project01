@@ -4,17 +4,10 @@ using UnityEngine;
 
 public class TileTrainHorn : MonoBehaviour
 {
+    public AudioManager audioManager; // reference to the Audio Manager script
     
-    public bool playedHornClip;
-    
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other) // On trigger enter
     {
-        
-        playedHornClip = true;
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        playedHornClip = false;
+        audioManager.PlayHornClip(); // call the Play Horn Clip function from the audio manager script
     }
 }

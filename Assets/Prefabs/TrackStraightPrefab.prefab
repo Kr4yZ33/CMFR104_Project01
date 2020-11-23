@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867517401682995824}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.576, y: 0.20999992, z: -0.755}
+  m_LocalPosition: {x: 0.576, y: 0.23, z: -0.755}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 867517401969586011}
@@ -74,8 +74,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97d616746f727ba4cbed08f8d5d50128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trackSnapConnection: {fileID: 867517403714337061}
   trainController: {fileID: 0}
-  trackSnapConnection: {fileID: 867517402002315998}
   trainPassingTransform: 0
   closestEdge: {fileID: 0}
   a1: {fileID: 867517402331015199}
@@ -388,8 +388,8 @@ GameObject:
   - component: {fileID: 867517401969586013}
   - component: {fileID: 867517401969586014}
   - component: {fileID: 867517401969586015}
-  - component: {fileID: 867517401969585952}
   - component: {fileID: 867517401969585953}
+  - component: {fileID: 867517403714337060}
   m_Layer: 18
   m_Name: TrackStraightPrefab
   m_TagString: TrackStraightSpawn
@@ -406,7 +406,7 @@ Transform:
   m_GameObject: {fileID: 867517401969585954}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 1.84, y: 0.1881, z: -0.402}
-  m_LocalScale: {x: 0.07891626, y: 0.07891626, z: 0.07891626}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 867517401739840426}
   - {fileID: 867517402331015199}
@@ -503,24 +503,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &867517401969585952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 867517401969585954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c21128fadc7d2449b16577a13faa9f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hapticsController: {fileID: 867517401969585953}
-  buildPlatformGridSnapController: {fileID: 0}
-  isHeld: 0
-  onBuildPlatform: 0
-  buildPlatform: {fileID: 0}
-  targetTransform: {fileID: 0}
 --- !u!114 &867517401969585953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -537,6 +519,22 @@ MonoBehaviour:
   trackConnected: 0
   trackConnectedRhand: 0
   trackConnectedLhand: 0
+  isHeld: 0
+--- !u!114 &867517403714337060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867517401969585954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e73012eb768a554ea298badb2de94f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentTarget: {fileID: 0}
+  previousTarget: {fileID: 0}
+  trainSpeed: 0.5
 --- !u!1 &867517402002315936
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,7 +545,7 @@ GameObject:
   m_Component:
   - component: {fileID: 867517402002315999}
   - component: {fileID: 867517402002315997}
-  - component: {fileID: 867517402002315998}
+  - component: {fileID: 867517403714337061}
   m_Layer: 0
   m_Name: A2E
   m_TagString: TrackEdge
@@ -563,7 +561,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867517402002315936}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.898, y: 0.20999992, z: -0.738}
+  m_LocalPosition: {x: 0.898, y: 0.23, z: -0.738}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 867517401969586011}
@@ -582,7 +580,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &867517402002315998
+--- !u!114 &867517403714337061
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -591,14 +589,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 867517402002315936}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7cb0998d59201342bb2e640acaff6a7, type: 3}
+  m_Script: {fileID: 11500000, guid: e7aa4b4f333e3724c9189cc64ee63d1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hapticsController: {fileID: 867517401969585953}
   audioSource: {fileID: 0}
   trackConnectedClip: {fileID: 8300000, guid: 2cda6d5d7e2de74499d7cd67eeee0807, type: 3}
   closestEdge: {fileID: 0}
-  volume: 0.5
+  volume: 0.7
 --- !u!1 &867517402331015648
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,7 +624,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867517402331015648}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.241, y: 0.12, z: -0.717}
+  m_LocalPosition: {x: -1.241, y: 0.23, z: -0.717}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 867517401969586011}
@@ -673,8 +671,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b999f10050d3844b67c66ca0b1a755, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trackSnapConnection: {fileID: 867517403714337062}
   trainController: {fileID: 0}
-  trackSnapConnection: {fileID: 867517403106444027}
   trainPassingTransform: 0
   closestEdge: {fileID: 0}
   a1: {fileID: 867517402331015199}
@@ -689,7 +687,7 @@ GameObject:
   m_Component:
   - component: {fileID: 867517403106444028}
   - component: {fileID: 867517403106444026}
-  - component: {fileID: 867517403106444027}
+  - component: {fileID: 867517403714337062}
   m_Layer: 0
   m_Name: A1E
   m_TagString: TrackEdge
@@ -705,7 +703,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867517403106444029}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.58, y: 0.12, z: -0.734}
+  m_LocalPosition: {x: -1.58, y: 0.23, z: -0.734}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 867517401969586011}
@@ -724,7 +722,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &867517403106444027
+--- !u!114 &867517403714337062
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -733,11 +731,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 867517403106444029}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7cb0998d59201342bb2e640acaff6a7, type: 3}
+  m_Script: {fileID: 11500000, guid: e7aa4b4f333e3724c9189cc64ee63d1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hapticsController: {fileID: 867517401969585953}
   audioSource: {fileID: 0}
   trackConnectedClip: {fileID: 8300000, guid: 2cda6d5d7e2de74499d7cd67eeee0807, type: 3}
   closestEdge: {fileID: 0}
-  volume: 0.5
+  volume: 0.7

@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class TrainController : MonoBehaviour
 {
+
     public bool trainHeld;
-    //public bool movementStarted;
     public bool edgeTransition;
-    public bool trainMeshFaceNextWaypoint = false;
 
     public Transform startingPos;
     public Vector3 targetPosition; // reference to our target position
@@ -38,13 +37,12 @@ public class TrainController : MonoBehaviour
                 Debug.Log("Previous Target not set");
 
             }
-
         }
 
 
         if (trainHeld == true)
         {
-            previousTarget = currentTarget;
+            currentTarget = previousTarget;
             currentTarget = null;
             trainSpeed = 0f;
         }
@@ -53,24 +51,6 @@ public class TrainController : MonoBehaviour
             targetPosition = currentTarget.position;
             trainSpeed = 0.5f;
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * trainSpeed);
-
-            //if (Vector3.Distance(transform.position, targetPosition) <= minDistanceToTarget)
-            //{
-                
-                //if (targetPosition == startingPos.position)
-                //{
-                    //movementStarted = true;
-                    //targetPosition = currentTarget.position;
-                //}
-
-            //}
-            //SetFirstMoveTowardsPosition();
-
-            if (targetPosition != startingPos.position)
-            {
-                targetPosition = currentTarget.position;
-            }
-
         }
     }
 
@@ -86,7 +66,6 @@ public class TrainController : MonoBehaviour
         if(other.CompareTag("TrackEdge"))
         {
             edgeTransition = true;
-            trainMeshFaceNextWaypoint = false;
         }
     }
 
@@ -100,22 +79,6 @@ public class TrainController : MonoBehaviour
         if (other.CompareTag("TrackEdge"))
         {
             edgeTransition = false;
-            TrainMeshFaceNextWaypoint();
         }
     }
-
-    void TrainMeshFaceNextWaypoint()
-    {
-        trainMeshFaceNextWaypoint = true;
-    }
-
-    //void SetFirstMoveTowardsPosition()
-    //{
-        //if (movementStarted == false && trainHeld != true)
-        //{
-            //trackAreaController.currentTarget = trackAreaController.testingTarget;
-            //trackAreaController.previousTarget = trackAreaController.currentTarget;
-            //movementStarted = true;
-        //}
-    //}
 }

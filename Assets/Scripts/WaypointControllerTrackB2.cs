@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class WaypointControllerTrackB2 : MonoBehaviour
 {
-    public TrainController trainController; // reference to the TrainController script
     public TrackSnapConnection trackSnapConnection;
 
     public bool trainPassingTransform;
@@ -13,7 +12,7 @@ public class WaypointControllerTrackB2 : MonoBehaviour
     public Transform b1;
     public Transform b2;
 
-    private void Update()
+    private void FixedUpdate()
     {
         closestEdge = trackSnapConnection.closestEdge;
     }
@@ -27,16 +26,18 @@ public class WaypointControllerTrackB2 : MonoBehaviour
         }
         if (other.CompareTag("Train"))
         {
-            if (trainController.previousTarget != b1)
+            TrainController script = other.gameObject.GetComponent<TrainController>();
+
+            if (script.previousTarget != b1)
             {
-                trainController.previousTarget = b2;
-                trainController.currentTarget = b1;
+                script.previousTarget = b2;
+                script.currentTarget = b1;
                 trainPassingTransform = true;
             }
-            if (trainController.previousTarget == b1)
+            if (script.previousTarget == b1)
             {
-                trainController.previousTarget = b2;
-                trainController.currentTarget = closestEdge;
+                script.previousTarget = b2;
+                script.currentTarget = closestEdge;
                 trainPassingTransform = true;
             }
         }
@@ -47,7 +48,7 @@ public class WaypointControllerTrackB2 : MonoBehaviour
         if (other.CompareTag("Train"))
         {
             trainPassingTransform = false;
-            closestEdge = null;
         }
+
     }
 }

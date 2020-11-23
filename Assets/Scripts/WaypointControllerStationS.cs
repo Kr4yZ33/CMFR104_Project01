@@ -4,14 +4,10 @@ using UnityEngine;
 
 public class WaypointControllerStationS : MonoBehaviour
 {
-    public TrainController trainController; // reference to the TrainController script
-
     public bool trainPassingTransform;
 
-    public Transform startPos;
-    public Transform s2;
     public Transform s1;
-    public Transform s;
+    public Transform s2;
 
     void OnTriggerEnter(Collider other)
     {
@@ -23,26 +19,12 @@ public class WaypointControllerStationS : MonoBehaviour
 
         if (other.CompareTag("Train"))
         {
-            if (trainController.currentTarget == startPos)
-            {
-                trainController.previousTarget = s;
-                trainController.currentTarget = s1;
-                trainPassingTransform = true;
-            }
-
-            if (trainController.previousTarget == s1)
-            {
-                trainController.previousTarget = s;
-                trainController.currentTarget = s2;
-                trainPassingTransform = true;
-            }
-
-            if (trainController.previousTarget == s2)
-            {
-                trainController.previousTarget = s;
-                trainController.currentTarget = s1;
-                trainPassingTransform = true;
-            }
+            TrainController script = other.gameObject.GetComponent<TrainController>();
+            
+            
+            script.previousTarget = s2;
+            script.currentTarget = s1;
+            trainPassingTransform = true;
         }
     }
 
