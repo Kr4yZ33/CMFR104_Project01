@@ -20,25 +20,11 @@ public class TrainController : MonoBehaviour
     {
         targetPosition = startingPos.position;
         transform.position = targetPosition;
-            
-        if(currentTarget == null)
-        {
-            currentTarget = startingPos;
-        }   
+             
     }
 
     void Update()
     {
-        if (currentTarget == null)
-        {
-            currentTarget = previousTarget;
-            if (previousTarget == null)
-            {
-                Debug.Log("Previous Target not set");
-
-            }
-        }
-
 
         if (trainHeld == true)
         {
@@ -74,6 +60,7 @@ public class TrainController : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             trainHeld = false;
+            currentTarget = startingPos;
         }
 
         if (other.CompareTag("TrackEdge"))

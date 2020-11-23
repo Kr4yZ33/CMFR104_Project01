@@ -5,7 +5,7 @@ using UnityEngine;
 public class TrainMeshDirectionSetter : MonoBehaviour
 {
     public TrainController trainController;
-    public Transform waypoint;
+    Transform waypoint;
 
     private void Update()
     {
