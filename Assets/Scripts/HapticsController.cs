@@ -5,17 +5,17 @@ using UnityEngine;
 public class HapticsController : MonoBehaviour
 {
 
-    public AudioSource audioSource;
+    public AudioSource audioSource; // reference to the audio source
     OVRHapticsClip buzz; // reference to the OVR Haptic clip
     public AudioClip trackConnect; // reference to the track connected audio clip
     public bool trackConnected; // bool for if the track is connected or not
     public bool trackConnectedRhand; // bool showing if the right hand is the one holding the object
     public bool trackConnectedLhand; // bool showing if the left hand is the one holding the object
-    public bool isHeld;
+    public bool isHeld; // bool for if the object is being held of not
 
-    public bool trackConnectClipPlayed;
-    public AudioClip trackConnectedClip;
-    public float volume = 0.7f;
+    public bool trackConnectClipPlayed; // bool for if the track connection clip has played or not
+    public AudioClip trackConnectedClip; // reference to the audio clip for the track connection clip
+    public float volume = 0.7f; // the volume the clip plays at
 
     // Start is called before the first frame update
     void Start()
@@ -25,9 +25,9 @@ public class HapticsController : MonoBehaviour
 
     void Update()
     {
-        if (trackConnectClipPlayed == true)
+        if (trackConnectClipPlayed == true) // if the bool for trackConnectClipPlayed equals true
         {
-            return;
+            return; // exit the function
         }
 
         else if (trackConnectedRhand == true && trackConnected == true) // if the bool for right hand used is true
@@ -77,8 +77,11 @@ public class HapticsController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Function that plays our track connection audio clip
+    /// </summary>
     public void PlayTrackConnectionClip()
     {
-        audioSource.PlayOneShot(trackConnectedClip, volume);
+        audioSource.PlayOneShot(trackConnectedClip, volume); // play one shot of the track connected clip on the audio source at the volume set (0.7)
     }
 }

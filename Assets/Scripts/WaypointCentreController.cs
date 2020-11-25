@@ -7,7 +7,7 @@ public class WaypointCentreController : MonoBehaviour
     public Transform rightEdge;
     public Transform leftEdge;
     public Transform centre;
-    public bool trainPassingTransform;
+    public bool trainPassingTransform; // bool for if the train is passing the transform or not
 
     void OnTriggerEnter(Collider other)
     {

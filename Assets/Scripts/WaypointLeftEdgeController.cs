@@ -6,7 +6,7 @@ public class WaypointLeftEdgeController : MonoBehaviour
 {
 
     public HapticsController hapticsController;
-    public bool trainPassingTransform;
+    public bool trainPassingTransform; // bool for if the train is passing the transform or not
 
     public Transform closestEdge;
     public Transform right;

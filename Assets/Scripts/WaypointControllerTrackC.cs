@@ -6,8 +6,7 @@ public class WaypointControllerTrackC : MonoBehaviour
 {
     public TrainController trainController; // reference to the TrainController script
 
-    public bool trainPassingTransform;
-
+    public bool trainPassingTransform;  // bool for if the train is passing the transform or not
     public Transform c2;
     public Transform c1;
     public Transform c;
