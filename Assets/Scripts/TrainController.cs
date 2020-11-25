@@ -14,7 +14,7 @@ public class TrainController : MonoBehaviour
     public Transform currentTarget;
     public Transform previousTarget;
 
-    public float trainSpeed = 0.5f;
+    public float trainSpeed = 0.2f;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +36,7 @@ public class TrainController : MonoBehaviour
         else
         {
             targetPosition = currentTarget.position;
-            trainSpeed = 0.5f;
+            trainSpeed = 0.2f;
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * trainSpeed);
         }
     }
@@ -49,12 +49,19 @@ public class TrainController : MonoBehaviour
             PlayTrainHorn();
         }
 
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("RightHand"))
         {
+            
             trainHeld = true;
         }
 
-        if(other.CompareTag("TrackEdge"))
+        if (other.CompareTag("LeftHand"))
+        {
+
+            trainHeld = true;
+        }
+
+        if (other.CompareTag("TrackEdge"))
         {
             edgeTransition = true;
         }
@@ -62,7 +69,13 @@ public class TrainController : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("LeftHand"))
+        {
+            trainHeld = false;
+            currentTarget = startingPos;
+        }
+
+        if (other.CompareTag("RightHand"))
         {
             trainHeld = false;
             currentTarget = startingPos;

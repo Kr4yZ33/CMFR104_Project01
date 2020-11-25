@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5301344629975926039
 Transform:
@@ -314,7 +314,7 @@ GameObject:
   m_TagString: TrackStraightSpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8610080654806681706
 Transform:
@@ -325,7 +325,7 @@ Transform:
   m_GameObject: {fileID: 2339825971412136438}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0.84232503, y: 0.0954729, z: -0.51474583}
-  m_LocalScale: {x: 0.078916214, y: 0.07891627, z: 0.078916214}
+  m_LocalScale: {x: 0.07891621, y: 0.07891627, z: 0.07891621}
   m_Children:
   - {fileID: 3525547992871100865}
   - {fileID: 8639733046475099956}
@@ -382,11 +382,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fd02c8b207fc204dbc62d8c6c119e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   trackConnect: {fileID: 8300000, guid: 2cda6d5d7e2de74499d7cd67eeee0807, type: 3}
   trackConnected: 0
   trackConnectedRhand: 0
   trackConnectedLhand: 0
   isHeld: 0
+  trackConnectClipPlayed: 0
+  trackConnectedClip: {fileID: 8300000, guid: 2cda6d5d7e2de74499d7cd67eeee0807, type: 3}
+  volume: 0.7
 --- !u!65 &2339825971412136435
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -453,7 +457,7 @@ GameObject:
   m_TagString: TrackStraightSpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8639733046475099956
 Transform:
@@ -481,13 +485,14 @@ GameObject:
   m_Component:
   - component: {fileID: 4679182494901282674}
   - component: {fileID: 4679182494901282675}
-  - component: {fileID: 4679182494901282672}
+  - component: {fileID: 8734050758870729589}
+  - component: {fileID: 2076010552117723803}
   m_Layer: 18
   m_Name: B1E
   m_TagString: TrackEdge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4679182494901282674
 Transform:
@@ -497,7 +502,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4679182494901282673}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.06, y: -0.039, z: 0.299}
+  m_LocalPosition: {x: -1.499, y: -0.553, z: 0.311}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8610080654806681706}
@@ -514,9 +519,9 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.6
+  m_Radius: 0.4
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4679182494901282672
+--- !u!114 &8734050758870729589
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -525,14 +530,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 4679182494901282673}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7aa4b4f333e3724c9189cc64ee63d1d, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d6af3591eed49148a84dbc0d939651f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hapticsController: {fileID: 0}
-  audioSource: {fileID: 0}
-  trackConnectedClip: {fileID: 8300000, guid: 2cda6d5d7e2de74499d7cd67eeee0807, type: 3}
+  hapticsController: {fileID: 2339825971412136432}
+  trainPassingTransform: 0
   closestEdge: {fileID: 0}
-  volume: 0.7
+  right: {fileID: 4679182494901282674}
+  left: {fileID: 4679182496046206448}
+--- !u!54 &2076010552117723803
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4679182494901282673}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1 &4679182495203410701
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,8 +571,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 0
 --- !u!4 &4679182495203410700
 Transform:
   m_ObjectHideFlags: 0
@@ -591,7 +612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9357596fdd5cb14b99cbaac4c20bdef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackSnapConnection: {fileID: 4679182494901282672}
+  trackSnapConnection: {fileID: 0}
   trainPassingTransform: 0
   closestEdge: {fileID: 0}
   b1: {fileID: 4679182495203410700}
@@ -622,13 +643,14 @@ GameObject:
   m_Component:
   - component: {fileID: 4679182496046206448}
   - component: {fileID: 4679182496046206449}
-  - component: {fileID: 4679182496046206454}
+  - component: {fileID: 5159300464048303411}
+  - component: {fileID: 8213726271873178351}
   m_Layer: 18
   m_Name: B2E
   m_TagString: TrackEdge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4679182496046206448
 Transform:
@@ -638,7 +660,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4679182496046206455}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.107, y: -0.039, z: -0.541}
+  m_LocalPosition: {x: -0.169, y: -0.616, z: -1.004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8610080654806681706}
@@ -655,9 +677,9 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.6
+  m_Radius: 0.4
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4679182496046206454
+--- !u!114 &5159300464048303411
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -666,14 +688,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 4679182496046206455}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7aa4b4f333e3724c9189cc64ee63d1d, type: 3}
+  m_Script: {fileID: 11500000, guid: a9f321cd8d88f984b89dd262390cfdeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hapticsController: {fileID: 0}
-  audioSource: {fileID: 0}
-  trackConnectedClip: {fileID: 8300000, guid: 2cda6d5d7e2de74499d7cd67eeee0807, type: 3}
+  hapticsController: {fileID: 2339825971412136432}
+  trainPassingTransform: 0
   closestEdge: {fileID: 0}
-  volume: 0.7
+  right: {fileID: 4679182494901282674}
+  left: {fileID: 4679182496046206448}
+--- !u!54 &8213726271873178351
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4679182496046206455}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1 &4679182496493393802
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,8 +729,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 0
 --- !u!4 &4679182496493393813
 Transform:
   m_ObjectHideFlags: 0
@@ -748,7 +786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2caf2b5822a412e4bb9beb4310043671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackSnapConnection: {fileID: 4679182496046206454}
+  trackSnapConnection: {fileID: 0}
   trainPassingTransform: 0
   closestEdge: {fileID: 0}
   b1: {fileID: 4679182495203410700}
@@ -770,7 +808,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6275027120698060149
 Transform:
@@ -1065,7 +1103,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3525547992871100865
 Transform:
