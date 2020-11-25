@@ -14,7 +14,7 @@ public class TrainController : MonoBehaviour
     public Transform currentTarget;
     public Transform previousTarget;
 
-    public float trainSpeed = 0.2f;
+    public float trainSpeed = 0.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +36,7 @@ public class TrainController : MonoBehaviour
         else
         {
             targetPosition = currentTarget.position;
-            trainSpeed = 0.2f;
+            trainSpeed = 0.5f;
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * trainSpeed);
         }
     }

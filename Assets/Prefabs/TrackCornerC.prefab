@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6540892285160531982
 Transform:
@@ -309,7 +309,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7016077208579639656
 Transform:
@@ -345,7 +345,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &406322284202914582
 Transform:
@@ -354,9 +354,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6031923362003863077}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0.8754696, y: 0.03944235, z: 0.16140878}
-  m_LocalScale: {x: 0.078916244, y: 0.07891627, z: 0.078916244}
+  m_LocalScale: {x: 0.07891624, y: 0.07891627, z: 0.07891624}
   m_Children:
   - {fileID: 7760735656513940086}
   - {fileID: 7016077208579639656}
@@ -401,7 +401,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 3
+  m_CollisionDetection: 0
 --- !u!114 &6031923362003863075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,7 +492,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 0
 --- !u!4 &6134294239098889568
 Transform:
@@ -566,13 +566,13 @@ GameObject:
   - component: {fileID: 6134294239241911283}
   - component: {fileID: 6134294239241911281}
   - component: {fileID: 6134294240734325260}
-  - component: {fileID: 1250417468491391536}
+  - component: {fileID: 8466368574116221998}
   m_Layer: 18
   m_Name: C1E
   m_TagString: TrackEdge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6134294239241911283
 Transform:
@@ -582,7 +582,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6134294239241911282}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.094, y: 0.156, z: 0.907}
+  m_LocalPosition: {x: -0.094, y: 0.156, z: 0.878}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 406322284202914582}
@@ -599,7 +599,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.4
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &6134294240734325260
 Rigidbody:
@@ -617,7 +617,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!114 &1250417468491391536
+--- !u!114 &8466368574116221998
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -626,11 +626,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6134294239241911282}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9f321cd8d88f984b89dd262390cfdeb, type: 3}
+  m_Script: {fileID: 11500000, guid: 7eae625d2a8920d4895eb359b50f4129, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hapticsController: {fileID: 6031923362003863075}
   trainPassingTransform: 0
+  centre: {fileID: 6134294240369099483}
   closestEdge: {fileID: 0}
   right: {fileID: 6134294239854487751}
   left: {fileID: 6134294239241911283}
@@ -651,7 +652,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 0
 --- !u!4 &6134294239669752144
 Transform:
@@ -725,13 +726,13 @@ GameObject:
   - component: {fileID: 6134294239854487751}
   - component: {fileID: 6134294239854487749}
   - component: {fileID: 6134294239845029584}
-  - component: {fileID: 7462517257958225551}
+  - component: {fileID: 6675139433029473505}
   m_Layer: 18
   m_Name: C2E
   m_TagString: TrackEdge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6134294239854487751
 Transform:
@@ -741,7 +742,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6134294239854487750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.356, y: 0.156, z: -0.538}
+  m_LocalPosition: {x: 1.351, y: 0.156, z: -0.538}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 406322284202914582}
@@ -758,7 +759,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.4
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &6134294239845029584
 Rigidbody:
@@ -776,7 +777,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!114 &7462517257958225551
+--- !u!114 &6675139433029473505
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -785,11 +786,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6134294239854487750}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d6af3591eed49148a84dbc0d939651f, type: 3}
+  m_Script: {fileID: 11500000, guid: a76012685af0d2042896b8a8e512532f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hapticsController: {fileID: 6031923362003863075}
   trainPassingTransform: 0
+  centre: {fileID: 6134294240369099483}
   closestEdge: {fileID: 0}
   right: {fileID: 6134294239854487751}
   left: {fileID: 6134294239241911283}
@@ -804,13 +806,13 @@ GameObject:
   - component: {fileID: 6134294240369099483}
   - component: {fileID: 6134294240369099481}
   - component: {fileID: 6134294240369099480}
-  - component: {fileID: 1961280365671486507}
+  - component: {fileID: 6720811765986006544}
   m_Layer: 18
   m_Name: C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6134294240369099483
 Transform:
@@ -820,7 +822,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6134294240369099482}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.36, y: 0.156, z: -0.83}
+  m_LocalPosition: {x: -0.12, y: 0.105, z: -0.573}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 406322284202914582}
@@ -853,9 +855,9 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.31
+  m_Radius: 0.34
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1961280365671486507
+--- !u!114 &6720811765986006544
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -864,7 +866,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6134294240369099482}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03cccb5d6b620bc40a1f7f6e28e24eaa, type: 3}
+  m_Script: {fileID: 11500000, guid: 7504b276660b3744d93804a7a05f2033, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rightEdge: {fileID: 6134294239854487751}
@@ -885,7 +887,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7760735656513940086
 Transform:
@@ -919,7 +921,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7730741914381978345
 Transform:
