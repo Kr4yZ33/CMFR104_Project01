@@ -6,9 +6,9 @@ public class WaypointReverseDirectionRight : MonoBehaviour
 {
     public TrackSnapConnection trackSnapConnection;
 
-    public bool trainPassingTransform;
+    public bool trainPassingTransform; // bool for if the train is passing the transform or not
 
-    public Transform closestEdge;
+    public Transform closestEdge;  // Reference to the closest edge from another tile next to this transform
     public Transform r1;
 
     private void FixedUpdate()

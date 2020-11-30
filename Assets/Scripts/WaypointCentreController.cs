@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class WaypointCentreController : MonoBehaviour
 {
-    public Transform rightEdge;
-    public Transform leftEdge;
-    public Transform centre;
+    public Transform rightEdge; // reference to the right edge transform of the track tile
+    public Transform leftEdge; // reference to the left edge transform of the track tile
+    public Transform centre; // reference to the centre edge transform of the track tile
     public bool trainPassingTransform; // bool for if the train is passing the transform or not
 
     void OnTriggerEnter(Collider other)

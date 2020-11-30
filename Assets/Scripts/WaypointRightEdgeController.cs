@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class WaypointRightEdgeController : MonoBehaviour
 {
-    public HapticsController hapticsController;
+    public HapticsController hapticsController;  // Reference to the Haptics Controller Script
     public bool trainPassingTransform; // bool for if the train is passing the transform or not
 
-    public Transform closestEdge;
-    public Transform right;
-    public Transform left;
+    public Transform closestEdge;  // Reference to the closest edge from another tile next to this transform
+    public Transform right; // reference to the right edge transform of the track tile
+    public Transform left; // reference to the left edge transform of the track tile
 
     void OnTriggerEnter(Collider other)
     {

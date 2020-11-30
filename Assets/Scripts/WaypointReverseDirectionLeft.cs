@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class WaypointReverseDirectionLeft : MonoBehaviour
 {
-    public TrackSnapConnection trackSnapConnection;
+    public TrackSnapConnection trackSnapConnection; // reference to the Track Snap COnnection script
 
     public bool trainPassingTransform; // bool for if the train is passing the transform or not
 
-    public Transform closestEdge;
+    public Transform closestEdge;  // Reference to the closest edge from another tile next to this transform
     public Transform r2;
 
     private void FixedUpdate()

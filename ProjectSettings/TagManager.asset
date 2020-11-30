@@ -35,6 +35,7 @@ TagManager:
   - PortalExit
   - LeftHand
   - RightHand
+  - SmallPlayer
   layers:
   - Default
   - TransparentFX

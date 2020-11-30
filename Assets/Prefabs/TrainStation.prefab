@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 7688215483285617817}
   - component: {fileID: 7688215483285617816}
   - component: {fileID: 7688215483637759700}
+  - component: {fileID: 6008521596795674790}
   m_Layer: 18
   m_Name: TrainStation
   m_TagString: TrainStation
@@ -224,6 +225,23 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6008521596795674790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7688215483285617813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6125670f45e1df4eb2c89af825f7968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trainExitTransform: {fileID: 0}
+  rigLockToTrain: {fileID: 0}
+  trainStation: {fileID: 7688215483285617813}
+  playerAtStation: 0
+  ridingTrain: 0
 --- !u!1 &7688215484547818175
 GameObject:
   m_ObjectHideFlags: 0
