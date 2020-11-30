@@ -5,6 +5,7 @@ using UnityEngine;
 public class TrainController : MonoBehaviour
 {
     public AudioManager audioManager; // reference to the Audio Manager script
+    public RigScaleController rigScaleController;
 
     public bool trainHeld; // bool for if the train is being held or not (it's actually if the hand is colliding with the train, not grabbing)
     public bool edgeTransition; // bool for if tile waypoint edge transition is true or not

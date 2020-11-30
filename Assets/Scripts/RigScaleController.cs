@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RigScaleController : MonoBehaviour
-{
+{   
     public GameObject smallScaleRig;
     public GameObject smallScaleRigBelt;
     public GameObject largeScaleRig;
     public GameObject largeScaleRigBelt;
     public BoxCollider buildPlatformCollider;
+    public bool manualTrainRide;
     
 
     public void ChangeScaleToSmall()
@@ -19,6 +20,7 @@ public class RigScaleController : MonoBehaviour
         buildPlatformCollider.enabled = true;
         smallScaleRig.SetActive(true);
         smallScaleRigBelt.SetActive(true);
+        manualTrainRide = true;
         //gameObject.transform.position = smallRigSpawnTransform.transform.position;
     }
 

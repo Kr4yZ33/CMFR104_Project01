@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RideTheTrain : MonoBehaviour
 {
+    public RigScaleController rigScaleController;
     public Transform trainExitTransform; // reference to the transform the rig will jump to when exiting the train in small scale rig mode
     public GameObject rigLockToTrain; // reference to the game object that we will turn on and off to lock our VR Rig to the train
     public GameObject trainStation;
@@ -12,6 +13,11 @@ public class RideTheTrain : MonoBehaviour
 
     private void Update()
     {
+        if(rigScaleController.manualTrainRide == true)
+        {
+            playerAtStation = true;
+        }
+        
         if(ridingTrain == true)
         {
             return;
@@ -21,6 +27,8 @@ public class RideTheTrain : MonoBehaviour
             ridingTrain = true;
             RideTrain();
         }
+
+
     }
 
     void RideTrain()
@@ -32,6 +40,12 @@ public class RideTheTrain : MonoBehaviour
     {
         rigLockToTrain.SetActive(false);
         ridingTrain = false;
+        rigScaleController.ChangeScaleToLarge();
+    }
+
+    public void ManualTrainRide()
+    {
+        ridingTrain = true;
     }
 
     private void OnTriggerEnter(Collider other)

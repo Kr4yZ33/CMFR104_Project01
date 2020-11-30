@@ -36,6 +36,7 @@ TagManager:
   - LeftHand
   - RightHand
   - SmallPlayer
+  - ExitTrain
   layers:
   - Default
   - TransparentFX

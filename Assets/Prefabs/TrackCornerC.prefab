@@ -566,7 +566,7 @@ GameObject:
   - component: {fileID: 6134294239241911283}
   - component: {fileID: 6134294239241911281}
   - component: {fileID: 6134294240734325260}
-  - component: {fileID: 8466368574116221998}
+  - component: {fileID: 5543201006623827809}
   m_Layer: 18
   m_Name: C1E
   m_TagString: TrackEdge
@@ -617,7 +617,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!114 &8466368574116221998
+--- !u!114 &5543201006623827809
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -626,15 +626,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 6134294239241911282}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7eae625d2a8920d4895eb359b50f4129, type: 3}
+  m_Script: {fileID: 11500000, guid: a76012685af0d2042896b8a8e512532f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hapticsController: {fileID: 6031923362003863075}
   trainPassingTransform: 0
   centre: {fileID: 6134294240369099483}
   closestEdge: {fileID: 0}
-  right: {fileID: 6134294239854487751}
-  left: {fileID: 6134294239241911283}
+  right: {fileID: 6134294239241911283}
+  left: {fileID: 6134294239854487751}
 --- !u!1 &6134294239669752147
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,7 +726,7 @@ GameObject:
   - component: {fileID: 6134294239854487751}
   - component: {fileID: 6134294239854487749}
   - component: {fileID: 6134294239845029584}
-  - component: {fileID: 6675139433029473505}
+  - component: {fileID: 8537910710151274002}
   m_Layer: 18
   m_Name: C2E
   m_TagString: TrackEdge
@@ -742,7 +742,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6134294239854487750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.052, y: 0.156, z: -0.538}
+  m_LocalPosition: {x: 1.36, y: 0.156, z: -0.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 406322284202914582}
@@ -777,7 +777,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!114 &6675139433029473505
+--- !u!114 &8537910710151274002
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -786,15 +786,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 6134294239854487750}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a76012685af0d2042896b8a8e512532f, type: 3}
+  m_Script: {fileID: 11500000, guid: 7eae625d2a8920d4895eb359b50f4129, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hapticsController: {fileID: 6031923362003863075}
   trainPassingTransform: 0
   centre: {fileID: 6134294240369099483}
   closestEdge: {fileID: 0}
-  right: {fileID: 6134294239854487751}
-  left: {fileID: 6134294239241911283}
+  right: {fileID: 6134294239241911283}
+  left: {fileID: 6134294239854487751}
 --- !u!1 &6134294240369099482
 GameObject:
   m_ObjectHideFlags: 0

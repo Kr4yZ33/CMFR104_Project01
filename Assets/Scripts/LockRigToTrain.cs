@@ -16,6 +16,6 @@ public class LockRigToTrain : MonoBehaviour
     void LockRigToTrainPrefab()
     {
         vRRig.transform.position = train.transform.position;
-        vRRig.transform.rotation = train.transform.rotation;
+        //vRRig.transform.rotation = train.transform.rotation;
     }
 }
