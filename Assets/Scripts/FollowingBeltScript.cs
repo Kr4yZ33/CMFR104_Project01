@@ -29,11 +29,7 @@ public class FollowingBeltScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("LeftHand")) // on trigger start with an object tagged Player
-        {
-            isHeld = true; // set the isHeld bool to true
-        }
-        if (other.gameObject.CompareTag("RightHand")) // on trigger start with an object tagged Player
+        if(other.gameObject.CompareTag("Player")) // on trigger start with an object tagged Player
         {
             isHeld = true; // set the isHeld bool to true
         }
@@ -41,11 +37,7 @@ public class FollowingBeltScript : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("LeftHand")) // on trigger exit with an object tagged Player
-        {
-            isHeld = false; // set the isHeld bool to false
-        }
-        if (other.gameObject.CompareTag("RightHand")) // on trigger exit with an object tagged Player
+        if (other.gameObject.CompareTag("Player")) // on trigger exit with an object tagged Player
         {
             isHeld = false; // set the isHeld bool to false
         }
