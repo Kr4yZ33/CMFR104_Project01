@@ -16,11 +16,13 @@ public class PlayerRespawn : MonoBehaviour
         
         if(other.gameObject.CompareTag("Respawn")) // if the thing colliding with us has the tag Respawn
         {
-            
-            
-            gameObject.transform.position = playerRespawnTransform.transform.position; // set the transform of the object this script is attached to to the player respawn transform position
-            gameObject.transform.rotation = playerRespawnTransform.transform.rotation; // set the transform of the object this script is attached to to the player respawn transform rotation
 
-        }
+            EnablePlayerRespawn();
+        } 
+    }
+    public void EnablePlayerRespawn()
+    {
+        gameObject.transform.position = playerRespawnTransform.transform.position; // set the transform of the object this script is attached to to the player respawn transform position
+        gameObject.transform.rotation = playerRespawnTransform.transform.rotation; // set the transform of the object this script is attached to to the player respawn transform rotation
     }
 }

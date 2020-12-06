@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 2300572693348487215}
   m_Layer: 18
   m_Name: TrackCornerC
-  m_TagString: TrackStraightSpawn
+  m_TagString: TrackMesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

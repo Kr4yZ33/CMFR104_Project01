@@ -387,7 +387,6 @@ GameObject:
   - component: {fileID: 7688215483285617817}
   - component: {fileID: 7688215483285617816}
   - component: {fileID: 7688215483637759700}
-  - component: {fileID: 6008521596795674790}
   - component: {fileID: 4765080259555418207}
   - component: {fileID: 2294352300688822041}
   m_Layer: 18
@@ -504,25 +503,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &6008521596795674790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7688215483285617813}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6125670f45e1df4eb2c89af825f7968, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rigScaleController: {fileID: 0}
-  trainExitTransform: {fileID: 0}
-  rigLockToTrain: {fileID: 0}
-  trainStation: {fileID: 7688215483285617813}
-  smallScaleRig: {fileID: 0}
-  playerAtStation: 0
-  ridingTrain: 0
 --- !u!114 &4765080259555418207
 MonoBehaviour:
   m_ObjectHideFlags: 0

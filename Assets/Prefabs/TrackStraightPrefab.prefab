@@ -470,7 +470,7 @@ GameObject:
   - component: {fileID: 2258215357005433174}
   m_Layer: 18
   m_Name: TrackStraightPrefab
-  m_TagString: TrackStraightSpawn
+  m_TagString: TrackMesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
