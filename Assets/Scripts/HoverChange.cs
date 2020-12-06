@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class HoverChange : MonoBehaviour
 {
-    Renderer r;
-    Color originalColor;
+    //Renderer r;
+    //Color originalColor;
     public GameObject trackMesh;
 
-    void Start()
-    {
-        r = GetComponent<Renderer>();
-        originalColor = r.material.color;
-    }
+    //void Start()
+    //{
+        //r = GetComponent<Renderer>();
+        //originalColor = r.material.color;
+    //}
 
-    public void MakeGrey()
-    {
-        r.material.color = Color.grey;
-    }
+    //public void MakeGrey()
+    //{
+        //r.material.color = Color.grey;
+    //}
 
     public void HoverColour()
     {

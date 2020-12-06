@@ -11,24 +11,10 @@ public class GameManager : MonoBehaviour
     public bool thirdMissonComplete;
     public bool thirdMissonInProgress;
 
-
-    void FixedUpdate()
-    {
-        if(startMissionComplete == true && secondMissionComplete != true)
-        {
-            StartSecondMission();
-        }
-    }
-
     public void SkipTrainingMissions()
     {
         startMissionComplete = true;
         secondMissionComplete = true;
         thirdMissonComplete = true;
-    }
-
-    void StartSecondMission()
-    {
-
     }
 }
