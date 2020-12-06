@@ -12,6 +12,13 @@ public class WaypointLeftEdgeController : MonoBehaviour
     public Transform right; // reference to the right edge transform of the track tile
     public Transform left; // reference to the left edge transform of the track tile
 
+    private void FixedUpdate()
+    {
+        if (closestEdge == null)
+        {
+            closestEdge = gameObject.transform;
+        }
+    }
     void OnTriggerEnter(Collider other)
     {
         if (trainPassingTransform == true)

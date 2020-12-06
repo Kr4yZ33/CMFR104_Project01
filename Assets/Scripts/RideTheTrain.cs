@@ -8,6 +8,7 @@ public class RideTheTrain : MonoBehaviour
     public Transform trainExitTransform; // reference to the transform the rig will jump to when exiting the train in small scale rig mode
     public GameObject rigLockToTrain; // reference to the game object that we will turn on and off to lock our VR Rig to the train
     public GameObject trainStation;
+    public GameObject smallScaleRig;
     public bool playerAtStation;
     public bool ridingTrain;
 
@@ -40,7 +41,7 @@ public class RideTheTrain : MonoBehaviour
     {
         rigLockToTrain.SetActive(false);
         ridingTrain = false;
-        rigScaleController.ChangeScaleToLarge();
+        smallScaleRig.transform.position = trainExitTransform.transform.position;
     }
 
     public void ManualTrainRide()

@@ -12,6 +12,14 @@ public class ReverseEdgeWaypointController : MonoBehaviour
     public Transform closestEdge;
     public Transform reverseEdge;
 
+    private void FixedUpdate()
+    {
+        if(closestEdge == null)
+        {
+            closestEdge = gameObject.transform;
+        }
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (trainPassingTransform == true)

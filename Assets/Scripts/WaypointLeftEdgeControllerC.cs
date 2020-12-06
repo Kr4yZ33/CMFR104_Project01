@@ -13,6 +13,13 @@ public class WaypointLeftEdgeControllerC : MonoBehaviour
     public Transform right;
     public Transform left;
 
+    private void FixedUpdate()
+    {
+        if (closestEdge == null)
+        {
+            closestEdge = gameObject.transform;
+        }
+    }
     void OnTriggerEnter(Collider other)
     {
         if (trainPassingTransform == true)

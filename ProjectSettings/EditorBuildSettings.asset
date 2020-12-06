@@ -18,5 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/RideTheTrain.unity
     guid: 605d5b64d467f594bb6fe13514164aa5
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 9dd74e862322442438f83efddf6ef3ae,
+      type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4c8e1c7029651a94f8ede3dd4df9178b,
       type: 2}
