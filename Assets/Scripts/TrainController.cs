@@ -5,9 +5,12 @@ using UnityEngine;
 public class TrainController : MonoBehaviour
 {
     public AudioManager audioManager; // reference to the Audio Manager script
+    public GameManager gameManager;
+    public AudioSource audioSource;
 
     public bool trainHeld; // bool for if the train is being held or not (it's actually if the hand is colliding with the train, not grabbing)
     public bool edgeTransition; // bool for if tile waypoint edge transition is true or not
+    
 
     public Transform startingPos; // reference to the transform the train will jump to when the scene starts
     public Vector3 targetPosition; // reference to our target position
@@ -35,9 +38,14 @@ public class TrainController : MonoBehaviour
         }
         else // otherwise
         {
-            targetPosition = currentTarget.position; // set the target position to the current target
-            trainSpeed = 0.5f; // set the train speed to 0.5
-            transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * trainSpeed); // make the transform of the object this script is attached to move towards the target position using delta time at the train speed set (0.5)
+            if(gameManager.startMissionComplete == true)
+            {
+                audioSource.Play();
+                targetPosition = currentTarget.position; // set the target position to the current target
+                trainSpeed = 0.5f; // set the train speed to 0.5
+                transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * trainSpeed); // make the transform of the object this script is attached to move towards the target position using delta time at the train speed set (0.5)
+            }
+ 
         }
     }
 

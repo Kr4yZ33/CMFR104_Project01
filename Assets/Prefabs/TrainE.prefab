@@ -349,6 +349,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioManager: {fileID: 6148430669186036111}
+  gameManager: {fileID: 0}
+  audioSource: {fileID: 0}
   trainHeld: 0
   edgeTransition: 0
   startingPos: {fileID: 0}
@@ -367,7 +369,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4c43cbad3e1fd8c48b074690dd2c0360, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1

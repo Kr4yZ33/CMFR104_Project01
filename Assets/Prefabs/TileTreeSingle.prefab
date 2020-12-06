@@ -312,7 +312,7 @@ GameObject:
   - component: {fileID: 2105574865333064476}
   m_Layer: 18
   m_Name: TileTreeSingle
-  m_TagString: Untagged
+  m_TagString: TreeSpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

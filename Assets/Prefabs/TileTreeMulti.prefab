@@ -903,7 +903,7 @@ GameObject:
   - component: {fileID: 8920449483993873624}
   m_Layer: 18
   m_Name: TileTreeMulti
-  m_TagString: Untagged
+  m_TagString: TreeSpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
