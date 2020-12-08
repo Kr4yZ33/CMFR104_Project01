@@ -17,6 +17,8 @@ public class HapticsController : MonoBehaviour
     public AudioClip trackConnectedClip; // reference to the audio clip for the track connection clip
     public float volume = 0.7f; // the volume the clip plays at
 
+    public Transform gradSnapTransform;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,7 @@ public class HapticsController : MonoBehaviour
 
     void Update()
     {
+        
         if (trackConnectClipPlayed == true) // if the bool for trackConnectClipPlayed equals true
         {
             return; // exit the function
@@ -83,5 +86,10 @@ public class HapticsController : MonoBehaviour
     public void PlayTrackConnectionClip()
     {
         audioSource.PlayOneShot(trackConnectedClip, volume); // play one shot of the track connected clip on the audio source at the volume set (0.7)
+    }
+
+    public void SnapObjectToGrid()
+    {
+        gameObject.transform.position = gradSnapTransform.transform.position;
     }
 }
