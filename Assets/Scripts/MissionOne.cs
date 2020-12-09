@@ -16,7 +16,14 @@ public class MissionOne : MonoBehaviour
     public AudioSource audioSource;
     public float volume = 0.5f;
 
-    
+
+    public void StartMissionOne()
+    {
+        gameManager.startMissonInProgress = true;
+        transparentTrack.SetActive(true);
+        DisplyMissionOne();
+    }
+
     public void MissionOneComplete()
     {
         transparentTrack.SetActive(false);

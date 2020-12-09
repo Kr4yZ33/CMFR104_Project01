@@ -7,7 +7,9 @@ public class MissionTwoTrigger : MonoBehaviour
     public MissionTwo missionTwo;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("TreeSpawn"))
+        HapticsController script = other.gameObject.GetComponent<HapticsController>();
+
+        if (other.CompareTag("TreeSpawn") && script.isHeld != true)
         {
             missionTwo.MissionTwoComplete();
         }

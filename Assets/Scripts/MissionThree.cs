@@ -6,6 +6,7 @@ public class MissionThree : MonoBehaviour
 {
     public GameManager gameManager;
     public TrainExitTile trainExitTile;
+    public MissionFour missionFour;
 
     public GameObject missionThreeUI;
     public GameObject uIButtonDisplay;
@@ -40,7 +41,7 @@ public class MissionThree : MonoBehaviour
         gameManager.thirdMissonComplete = true;
         gameManager.thirdMissonInProgress = false;
         missionThreeUI.SetActive(false);
-        uIButtonDisplay.SetActive(true);
+        missionFour.StartMissionFour();
     }
 
     public void DisplyMissionThree()
