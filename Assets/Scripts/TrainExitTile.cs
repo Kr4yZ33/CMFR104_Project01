@@ -20,7 +20,7 @@ public class TrainExitTile : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("BuildPlatform"))
+        if (other.CompareTag("TilePlatform"))
         {
             buildPlatformInRange = true;
         }
@@ -43,7 +43,7 @@ public class TrainExitTile : MonoBehaviour
             trainExitTilePlaced = false;
         }
 
-        if (other.CompareTag("BuildPlatform"))
+        if (other.CompareTag("TilePlatform"))
         {
             buildPlatformInRange = false;
         }

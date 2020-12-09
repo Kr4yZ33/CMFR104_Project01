@@ -19785,6 +19785,20 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6148430668963545650}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &927200182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927200181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 868dd1cc8ca97764abccd40b3d379bad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPos: {fileID: 1312916609}
+  firstTimeTrainReset: 0
 --- !u!114 &927200188 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6148430669186036110, guid: 8e51d9dfc6ad07b4d914c4fcdd9f27fd,
@@ -28467,7 +28481,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh756474
+  m_Name: pb_Mesh821904
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -35409,7 +35423,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh756796
+  m_Name: pb_Mesh822216
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -36329,12 +36343,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1338844531108765892, guid: c356de56befe17c41a93e232dad286a5,
     type: 3}
   m_PrefabInstance: {fileID: 1863015074}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1867097671 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7688215484871201000, guid: ce0dd7c199a4d76489a6da3cac108369,
-    type: 3}
-  m_PrefabInstance: {fileID: 334184267}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1868485076
 PrefabInstance:
@@ -41744,7 +41752,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2121638954}
   - component: {fileID: 2121638953}
-  - component: {fileID: 2121638955}
   - component: {fileID: 2121638956}
   m_Layer: 0
   m_Name: Managers
@@ -41863,21 +41870,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2121638955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121638952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 868dd1cc8ca97764abccd40b3d379bad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startPos: {fileID: 1867097671}
-  train: {fileID: 927200181}
-  firstTimeTrainReset: 0
 --- !u!114 &2121638956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44271,6 +44263,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1793382702}
+    - target: {fileID: 4821189194654112752, guid: ffe0182554d8c3d40a2afc004962fb50,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4821189194730635640, guid: ffe0182554d8c3d40a2afc004962fb50,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -44281,6 +44278,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1154878549}
+    - target: {fileID: 4821189195109858066, guid: ffe0182554d8c3d40a2afc004962fb50,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5933045335130602086, guid: ffe0182554d8c3d40a2afc004962fb50,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5933045336229030700, guid: ffe0182554d8c3d40a2afc004962fb50,
         type: 3}
       propertyPath: gameManager
@@ -44315,7 +44322,7 @@ PrefabInstance:
         type: 3}
       propertyPath: resetTrain
       value: 
-      objectReference: {fileID: 2121638955}
+      objectReference: {fileID: 927200182}
     - target: {fileID: 5933045336229030702, guid: ffe0182554d8c3d40a2afc004962fb50,
         type: 3}
       propertyPath: gameManager
@@ -44415,7 +44422,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2121638955}
+      objectReference: {fileID: 927200182}
+    - target: {fileID: 7469543005953873834, guid: ffe0182554d8c3d40a2afc004962fb50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResetTrainPrefab
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffe0182554d8c3d40a2afc004962fb50, type: 3}
 --- !u!1001 &5330112329135686154
@@ -45417,6 +45429,16 @@ PrefabInstance:
       propertyPath: trainRideRig
       value: 
       objectReference: {fileID: 1392947570}
+    - target: {fileID: 8057273068673293849, guid: 0a628c6cb052b134199f7a61ecfe808d,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057273068673293849, guid: 0a628c6cb052b134199f7a61ecfe808d,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a628c6cb052b134199f7a61ecfe808d, type: 3}
 --- !u!4 &6975675349110750752 stripped
