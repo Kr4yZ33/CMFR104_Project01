@@ -37,6 +37,7 @@ TagManager:
   - RightHand
   - SmallPlayer
   - ExitTrain
+  - TrainStationTrackTwo
   layers:
   - Default
   - TransparentFX
@@ -59,7 +60,7 @@ TagManager:
   - Grabbable
   - Ground
   - IgnorePlayer
-  - 
+  - TabletPictures
   - 
   - 
   - 

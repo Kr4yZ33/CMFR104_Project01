@@ -18,10 +18,12 @@ public class GameManager : MonoBehaviour
 
     public GameObject missionOneQuickClear;
     public GameObject transparentTrack;
+    public GameObject transparentTree;
 
     public void SkipTrainingMissions()
     {
         transparentTrack.SetActive(false);
+        transparentTree.SetActive(false);
         missionOneQuickClear.SetActive(true);
         startMissionComplete = true;
         secondMissionComplete = true;

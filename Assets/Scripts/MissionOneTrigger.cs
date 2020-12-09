@@ -7,9 +7,7 @@ public class MissionOneTrigger : MonoBehaviour
     public MissionOne missionOne;
     private void OnTriggerEnter(Collider other)
     {
-        HapticsController script = other.gameObject.GetComponent<HapticsController>();
-
-        if (other.CompareTag("TrackMesh") && script.isHeld != true)
+        if (other.CompareTag("TrackMesh"))
         {
             missionOne.MissionOneComplete();
         }

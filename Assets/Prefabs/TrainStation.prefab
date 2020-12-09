@@ -389,6 +389,7 @@ GameObject:
   - component: {fileID: 7688215483637759700}
   - component: {fileID: 4765080259555418207}
   - component: {fileID: 2294352300688822041}
+  - component: {fileID: 3269009414447850057}
   m_Layer: 18
   m_Name: TrainStation
   m_TagString: TrainStation
@@ -443,7 +444,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  trackConnect: {fileID: 8300000, guid: 2cda6d5d7e2de74499d7cd67eeee0807, type: 3}
   trackConnected: 0
   trackConnectedRhand: 0
   trackConnectedLhand: 0
@@ -626,6 +626,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackMesh: {fileID: 7688215484871201001}
+--- !u!114 &3269009414447850057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7688215483285617813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6125670f45e1df4eb2c89af825f7968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trainExitTile: {fileID: 0}
 --- !u!1 &7688215484547818175
 GameObject:
   m_ObjectHideFlags: 0
