@@ -13,13 +13,19 @@ public class TrainExitTile : MonoBehaviour
     public bool trainExitTilePlaced;
     public bool ridingTrain;
     public bool passedStationWhileRidingTrain;
+    public bool buildPlatformInRange;
 
     public GameObject vRRig;
     public GameObject trainRideRig;
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Train") && ridingTrain == true)
+        if (other.CompareTag("BuildPlatform"))
+        {
+            buildPlatformInRange = true;
+        }
+
+        if (other.CompareTag("Train") && ridingTrain == true)
         {
             ExitTheTrain();
         }
@@ -35,6 +41,11 @@ public class TrainExitTile : MonoBehaviour
         if (other.CompareTag("TrackMesh"))
         {
             trainExitTilePlaced = false;
+        }
+
+        if (other.CompareTag("BuildPlatform"))
+        {
+            buildPlatformInRange = false;
         }
     }
 

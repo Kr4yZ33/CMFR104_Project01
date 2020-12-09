@@ -5,7 +5,7 @@ using UnityEngine;
 public class MissionFour : MonoBehaviour
 {
     public GameManager gameManager;
-    public TrainController trainController;
+    public ResetTrain resetTrain;
 
     public GameObject missionFourUI;
     public GameObject uIButtonDisplay;
@@ -15,9 +15,6 @@ public class MissionFour : MonoBehaviour
     public AudioSource audioSource;
     public float volume = 0.5f;
 
-    public bool missionStageOneComplete;
-    public bool missionStageTwoComplete;
-
     private void FixedUpdate()
     {
         if (gameManager.fourthMissonComplete == true)
@@ -25,19 +22,8 @@ public class MissionFour : MonoBehaviour
             return;
         }
 
-        if(missionStageTwoComplete == true)
+        if(resetTrain.firstTimeTrainReset == true)
         {
-            return;
-        }
-
-        if(trainController.trainPassedTrainStationTrackTwo == true)
-        {
-            missionStageOneComplete = true;
-        }
-
-        if(missionStageOneComplete == true && trainController.trainPassedTrainStationTrackOne == true)
-        {
-            missionStageTwoComplete = true;
             MissionFourComplete();
         }
     }

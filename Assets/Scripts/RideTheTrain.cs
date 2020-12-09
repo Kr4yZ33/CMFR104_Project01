@@ -18,9 +18,9 @@ public class RideTheTrain : MonoBehaviour
             return;
         }
 
-        if (other.CompareTag("Train") && trainExitTile.trainExitTilePlaced == true)
+        if (other.CompareTag("Train") && trainExitTile.trainExitTilePlaced == true && trainExitTile.buildPlatformInRange == true)
         {
             trainExitTile.RideTheTrain();
         }
-    }
+    }  
 }

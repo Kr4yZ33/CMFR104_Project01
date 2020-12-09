@@ -20,7 +20,6 @@ public class TrainController : MonoBehaviour
     public float trainSpeed = 0.5f; // the speed of the train
 
     public bool trainPassedTrainStationTrackOne;
-    public bool trainPassedTrainStationTrackTwo;
 
     // Start is called before the first frame update
     void Start()
@@ -55,14 +54,9 @@ public class TrainController : MonoBehaviour
 
     void OnTriggerEnter(Collider other) // on trigger enter
     {
-        if(other.CompareTag("TrainStation"))
+        if(other.CompareTag("TrainStation") && gameManager.fourthMissonInProgress == true)
         {
             trainPassedTrainStationTrackOne = true;
-        }
-
-        if (other.CompareTag("TrainStationTrackTwo"))
-        {
-            trainPassedTrainStationTrackTwo = true;
         }
 
         if (other.CompareTag("HornSpawn")) // if the thing colliding with me is tagged HornSpawn
@@ -90,15 +84,6 @@ public class TrainController : MonoBehaviour
 
     void OnTriggerExit(Collider other) // on trigger exit
     {
-        if (other.CompareTag("TrainStation"))
-        {
-            trainPassedTrainStationTrackOne = false;
-        }
-
-        if (other.CompareTag("TrainStationTrackTwo"))
-        {
-            trainPassedTrainStationTrackTwo = false;
-        }
 
         if (other.CompareTag("LeftHand"))// if the thing colliding with me is tagged LeftHand
         {
