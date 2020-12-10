@@ -131,6 +131,7 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: -8158281386979686571, guid: 4c8e1c7029651a94f8ede3dd4df9178b, type: 2}
   - {fileID: 11400000, guid: 9dd74e862322442438f83efddf6ef3ae, type: 2}
+  - {fileID: 0}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -748,6 +749,7 @@ PlayerSettings:
   XboxOneCapability: []
   XboxOneGameRating: {}
   XboxOneIsContentPackage: 0
+  XboxOneEnhancedXboxCompatibilityMode: 0
   XboxOneEnableGPUVariability: 1
   XboxOneSockets: {}
   XboxOneSplashScreen: {fileID: 0}

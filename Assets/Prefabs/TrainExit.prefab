@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3997508909973303758}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.48, y: 0, z: 1.5}
-  m_LocalScale: {x: 0.99, y: 0.99, z: 0.99}
+  m_LocalPosition: {x: -1.469, y: 0.001, z: 1.498}
+  m_LocalScale: {x: 0.99, y: 0.98, z: 0.99}
   m_Children: []
   m_Father: {fileID: 4401822684416981617}
   m_RootOrder: 1
@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f0bf58b4059e93f40bf74b6394bcc08a, type: 2}
+  - {fileID: 2100000, guid: 8868bb69b880a6644bca734193c7a03f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -799,8 +799,13 @@ MonoBehaviour:
   trainExitTilePlaced: 0
   ridingTrain: 0
   passedStationWhileRidingTrain: 0
+  buildPlatformInRange: 0
   vRRig: {fileID: 0}
   trainRideRig: {fileID: 0}
+  rightHand: {fileID: 0}
+  rightHandRay: {fileID: 0}
+  leftHand: {fileID: 0}
+  leftHandRay: {fileID: 0}
 --- !u!82 &8057273068673293844
 AudioSource:
   m_ObjectHideFlags: 0
