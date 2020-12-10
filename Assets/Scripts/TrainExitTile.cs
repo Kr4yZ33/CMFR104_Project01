@@ -18,6 +18,11 @@ public class TrainExitTile : MonoBehaviour
     public GameObject vRRig;
     public GameObject trainRideRig;
 
+    public GameObject rightHand;
+    public GameObject rightHandRay;
+    public GameObject leftHand;
+    public GameObject leftHandRay;
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("TilePlatform"))
@@ -52,6 +57,10 @@ public class TrainExitTile : MonoBehaviour
     public void RideTheTrain()
     {
         vRRig.SetActive(false);
+        rightHand.SetActive(false);
+        rightHandRay.SetActive(false);
+        leftHand.SetActive(false);
+        leftHandRay.SetActive(false);
         trainRideRig.SetActive(true);
         ridingTrain = true;
         audioSource.PlayOneShot(allABoard, volume);
@@ -64,5 +73,9 @@ public class TrainExitTile : MonoBehaviour
         ridingTrain = false;
         passedStationWhileRidingTrain = false;
         playerRespawn.EnablePlayerRespawn();
+        rightHand.SetActive(true);
+        rightHandRay.SetActive(true);
+        leftHand.SetActive(true);
+        leftHandRay.SetActive(true);
     }
 }

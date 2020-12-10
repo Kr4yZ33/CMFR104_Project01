@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     public GameObject missionOneQuickClear;
     public GameObject transparentTrack;
     public GameObject transparentTree;
+    public GameObject trainTrackMovementSoundAudioSource;
 
     public void SkipTrainingMissions()
     {
@@ -29,5 +30,6 @@ public class GameManager : MonoBehaviour
         secondMissionComplete = true;
         thirdMissonComplete = true;
         missionFour.MissionFourComplete();
+        trainTrackMovementSoundAudioSource.SetActive(true);
     }
 }

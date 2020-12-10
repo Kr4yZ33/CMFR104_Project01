@@ -17,7 +17,7 @@ public class TrainController : MonoBehaviour
     public Transform currentTarget; // the transform the train is currently targeting
     public Transform previousTarget; // the previous transform target of the train
 
-    public float trainSpeed = 0.5f; // the speed of the train
+    public float trainSpeed = 0.05f; // the speed of the train
 
     public bool trainPassedTrainStationTrackOne;
 
@@ -44,7 +44,7 @@ public class TrainController : MonoBehaviour
             {
                 audioSource.Play();
                 targetPosition = currentTarget.position; // set the target position to the current target
-                trainSpeed = 0.5f; // set the train speed to 0.5
+                trainSpeed = 0.05f; // set the train speed to 0.05f
                 transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * trainSpeed); // make the transform of the object this script is attached to move towards the target position using delta time at the train speed set (0.5)
             }
  
