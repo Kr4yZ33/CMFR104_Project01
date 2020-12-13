@@ -6,7 +6,7 @@ public class ResetTrain : MonoBehaviour
 {
 
     public Transform startPos; // reference to the starting position transform fo rthe train
-    public bool firstTimeTrainReset;
+    public bool firstTimeTrainReset; // bool for if the train has been reset before or not
 
     /// <summary>
     /// Reset the train and make it's current target 
@@ -16,6 +16,6 @@ public class ResetTrain : MonoBehaviour
     {
         gameObject.transform.position = startPos.transform.position; // set the trains transform position to the starting position transform's position
         gameObject.transform.rotation = startPos.transform.rotation; // set the trains transform rotation to the starting position transform's rotation
-        firstTimeTrainReset = true;
+        firstTimeTrainReset = true; // set the first time train reset bool to true
     }
 }

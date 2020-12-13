@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class MissionTwoTrigger : MonoBehaviour
 {
-    public MissionTwo missionTwo;
+    public MissionTwo missionTwo; // reference to the Mission Two script
+    
+    /// <summary>
+    /// on trigger enter
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("TreeSpawn"))
+        if (other.CompareTag("TreeSpawn")) // if thie thing colliding with us is tagged TreeSPawn
         {
-            missionTwo.MissionTwoComplete();
+            missionTwo.MissionTwoComplete(); // call the function for mission two complete from the mission two script
         }
     }
 }

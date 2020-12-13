@@ -5,8 +5,8 @@ using UnityEngine;
 public class TrainController : MonoBehaviour
 {
     public AudioManager audioManager; // reference to the Audio Manager script
-    public GameManager gameManager;
-    public AudioSource audioSource;
+    public GameManager gameManager; // reference to the Game Manager
+    public AudioSource audioSource; // Reference to our Audio SOurce
 
     public bool trainHeld; // bool for if the train is being held or not (it's actually if the hand is colliding with the train, not grabbing)
     public bool edgeTransition; // bool for if tile waypoint edge transition is true or not
@@ -19,7 +19,7 @@ public class TrainController : MonoBehaviour
 
     public float trainSpeed = 0.05f; // the speed of the train
 
-    public bool trainPassedTrainStationTrackOne;
+    public bool trainPassedTrainStationTrackOne; // a bool for if the train has passed the train station yet
 
     // Start is called before the first frame update
     void Start()
@@ -40,9 +40,9 @@ public class TrainController : MonoBehaviour
         }
         else // otherwise
         {
-            if(gameManager.startMissionComplete == true)
+            if(gameManager.startMissionComplete == true) // if the start mission complete bool on the Game Manager Script is equal to true
             {
-                audioSource.Play();
+                audioSource.Play(); // play the audio source
                 targetPosition = currentTarget.position; // set the target position to the current target
                 trainSpeed = 0.05f; // set the train speed to 0.05f
                 transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * trainSpeed); // make the transform of the object this script is attached to move towards the target position using delta time at the train speed set (0.5)
@@ -54,9 +54,9 @@ public class TrainController : MonoBehaviour
 
     void OnTriggerEnter(Collider other) // on trigger enter
     {
-        if(other.CompareTag("TrainStation") && gameManager.fourthMissonInProgress == true)
+        if(other.CompareTag("TrainStation") && gameManager.fourthMissonInProgress == true) // if the thing colliding with us is tagged Train Station & the fourth mission in progress bool on the Game Manager is equal to true
         {
-            trainPassedTrainStationTrackOne = true;
+            trainPassedTrainStationTrackOne = true; // set the train passed train station bool to true
         }
 
         if (other.CompareTag("HornSpawn")) // if the thing colliding with me is tagged HornSpawn

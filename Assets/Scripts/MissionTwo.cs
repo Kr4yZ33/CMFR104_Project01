@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MissionTwo : MonoBehaviour
 {
-    public GameManager gameManager;
+    public GameManager gameManager; // reference to the Game Manager
     public MissionThree missionThree;
     public HoverChangeUIButtons hoverChangeUIButtons;
 

@@ -10,12 +10,15 @@ public class LockRigToTrain : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        LockRigToTrainPrefab();
+        LockRigToTrainPrefab(); // call the function to lock the train ride camera to the train
     }
 
+    /// <summary>
+    /// private function to lock the transform of the ride the train camera to the train
+    /// </summary>
     void LockRigToTrainPrefab()
     {
-        trainRideCamera.position = trainRideTransform.position;
+        trainRideCamera.position = trainRideTransform.position; // set the rain ride cameras transform to the train's transform
         //vRRig.transform.rotation = train.transform.rotation;
     }
 }
