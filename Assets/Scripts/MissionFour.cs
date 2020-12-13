@@ -40,6 +40,7 @@ public class MissionFour : MonoBehaviour
         if(gameManager.skipTrainingMissionns == true)
         {
             MissionFourComplete();
+            hoverChangeUIButtons.MakeGreen();
         }
     }
 
