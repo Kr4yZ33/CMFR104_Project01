@@ -6,12 +6,14 @@ public class MissionOne : MonoBehaviour
 {
     public GameManager gameManager;
     public MissionTwo missionTwo;
+    public HoverChangeUIButtons hoverChangeUIButtons;
 
     public GameObject transparentTrack;
     public GameObject missionOneUI;
     public GameObject uIButtonDisplay;
     public GameObject missionParent;
     public GameObject trainTrackMovementSoundAudioSource;
+    public GameObject missionOneButtonLight;
 
     public AudioClip missionSuccessful;
     public AudioSource audioSource;
@@ -23,6 +25,7 @@ public class MissionOne : MonoBehaviour
         gameManager.startMissonInProgress = true;
         transparentTrack.SetActive(true);
         DisplyMissionOne();
+        missionOneButtonLight.SetActive(true);
     }
 
     public void MissionOneComplete()
@@ -34,6 +37,7 @@ public class MissionOne : MonoBehaviour
         missionOneUI.SetActive(false);
         missionTwo.StartMissionTwo();
         trainTrackMovementSoundAudioSource.SetActive(true);
+        hoverChangeUIButtons.MakeGreen();
     }
 
     public void DisplyMissionOne()

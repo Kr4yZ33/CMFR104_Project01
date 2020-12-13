@@ -6,10 +6,14 @@ public class MissionFour : MonoBehaviour
 {
     public GameManager gameManager;
     public ResetTrain resetTrain;
+    public HoverChangeUIButtons hoverChangeUIButtons;
 
     public GameObject missionFourUI;
     public GameObject uIButtonDisplay;
     public GameObject missionParent;
+    public GameObject makingOfUiDisplay;
+    public GameObject missionThreeButtonLight;
+    public GameObject missionFourButtonLight;
 
     public AudioClip missionSuccessful;
     public AudioSource audioSource;
@@ -30,6 +34,8 @@ public class MissionFour : MonoBehaviour
 
     public void StartMissionFour()
     {
+        missionThreeButtonLight.SetActive(false);
+        missionFourButtonLight.SetActive(true);
         gameManager.fourthMissonInProgress = true;
         missionFourUI.SetActive(true);
     }
@@ -41,7 +47,9 @@ public class MissionFour : MonoBehaviour
         gameManager.fourthMissonInProgress = false;
         missionFourUI.SetActive(false);
         missionParent.SetActive(false);
+        hoverChangeUIButtons.MakeGreen();
         uIButtonDisplay.SetActive(true);
+        makingOfUiDisplay.SetActive(true);
     }
 
     public void DisplyMissionFour()

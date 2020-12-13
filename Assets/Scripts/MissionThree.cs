@@ -7,10 +7,13 @@ public class MissionThree : MonoBehaviour
     public GameManager gameManager;
     public TrainExitTile trainExitTile;
     public MissionFour missionFour;
+    public HoverChangeUIButtons hoverChangeUIButtons;
 
     public GameObject missionThreeUI;
     public GameObject uIButtonDisplay;
     public GameObject missionParent;
+    public GameObject missionTwoButtonLight;
+    public GameObject missionThreeButtonLight;
 
     public AudioClip missionSuccessful;
     public AudioSource audioSource;
@@ -31,6 +34,8 @@ public class MissionThree : MonoBehaviour
 
     public void StartMissionThree()
     {
+        missionTwoButtonLight.SetActive(false);
+        missionThreeButtonLight.SetActive(true);
         gameManager.thirdMissonInProgress = true;
         missionThreeUI.SetActive(true);
     }
@@ -41,6 +46,7 @@ public class MissionThree : MonoBehaviour
         gameManager.thirdMissonComplete = true;
         gameManager.thirdMissonInProgress = false;
         missionThreeUI.SetActive(false);
+        hoverChangeUIButtons.MakeGreen();
         missionFour.StartMissionFour();
     }
 

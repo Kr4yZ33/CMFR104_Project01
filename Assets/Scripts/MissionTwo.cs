@@ -6,11 +6,14 @@ public class MissionTwo : MonoBehaviour
 {
     public GameManager gameManager;
     public MissionThree missionThree;
+    public HoverChangeUIButtons hoverChangeUIButtons;
 
     public GameObject transparentTree;
     public GameObject missionTwoUI;
     public GameObject uIButtonDisplay;
     public GameObject missionParent;
+    public GameObject missionOneButtonLight;
+    public GameObject missionTwoButtonLight;
 
     public AudioClip missionSuccessful;
     public AudioSource audioSource;
@@ -19,6 +22,8 @@ public class MissionTwo : MonoBehaviour
 
     public void StartMissionTwo()
     {
+        missionOneButtonLight.SetActive(false);
+        missionTwoButtonLight.SetActive(true);
         gameManager.secondMissonInProgress = true;
         missionTwoUI.SetActive(true);
         transparentTree.SetActive(true);
@@ -31,6 +36,7 @@ public class MissionTwo : MonoBehaviour
         gameManager.secondMissionComplete = true;
         gameManager.secondMissonInProgress = false;
         missionTwoUI.SetActive(false);
+        hoverChangeUIButtons.MakeGreen();
         missionThree.StartMissionThree();
     }
 
