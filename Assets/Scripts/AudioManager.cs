@@ -19,7 +19,7 @@ public class AudioManager : MonoBehaviour
         // if there is no previous track
         if (previousTrack == null)
         {
-            previousTrack = bgm1;
+            previousTrack = bgm1; // set the previous track to the bgm1 clip
         }
         currentTrack = previousTrack; // set the current track to the previous track
         ChangeTrack(currentTrack); // play our previous track
@@ -35,9 +35,9 @@ public class AudioManager : MonoBehaviour
         {
             return;
         }
-        else
+        else // otherwise
         {
-            audioSource.PlayOneShot(hornClip, volume);
+            audioSource.PlayOneShot(hornClip, volume); // play the horn clip vis the audio source as a one shot play
         }
     }
 
