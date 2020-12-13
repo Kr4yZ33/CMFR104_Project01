@@ -6541,6 +6541,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -6635,6 +6640,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -6731,6 +6741,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -6825,6 +6840,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -6921,6 +6941,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -7016,6 +7041,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -7110,6 +7140,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -7291,6 +7326,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -7385,6 +7425,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -7481,6 +7526,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -7575,6 +7625,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -7671,6 +7726,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -7766,6 +7826,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -7860,6 +7925,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -8041,6 +8111,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -8221,6 +8296,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -8315,6 +8395,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -8411,6 +8496,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -8505,6 +8595,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -8601,6 +8696,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -8695,6 +8795,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -8791,6 +8896,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -8885,6 +8995,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -8981,6 +9096,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -9075,6 +9195,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -9171,6 +9296,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -9265,6 +9395,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -9446,6 +9581,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -9540,6 +9680,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -9636,6 +9781,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -9730,6 +9880,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -9826,6 +9981,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -9920,6 +10080,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -10101,6 +10266,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -10195,6 +10365,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -10291,6 +10466,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -10385,6 +10565,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -10481,6 +10666,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -10575,6 +10765,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -10671,6 +10866,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -10765,6 +10965,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -10861,6 +11066,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -10955,6 +11165,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -11051,6 +11266,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -11145,6 +11365,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -11241,6 +11466,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -11336,6 +11566,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -11430,6 +11665,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -11611,6 +11851,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -11705,6 +11950,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -11801,6 +12051,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -11895,6 +12150,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -11991,6 +12251,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -12085,6 +12350,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -12181,6 +12451,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -12275,6 +12550,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -12371,6 +12651,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -12465,6 +12750,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -12646,6 +12936,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -12740,6 +13035,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -12836,6 +13136,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -12930,6 +13235,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -13026,6 +13336,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -13120,6 +13435,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -13321,6 +13641,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -13415,6 +13740,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -13511,6 +13841,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -13605,6 +13940,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -13701,6 +14041,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -13795,6 +14140,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -13891,6 +14241,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -13985,6 +14340,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -14166,6 +14526,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -14346,6 +14711,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -14440,6 +14810,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -14536,6 +14911,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -14630,6 +15010,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -14726,6 +15111,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -14820,6 +15210,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -15001,6 +15396,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -15095,6 +15495,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -15191,6 +15596,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -15285,6 +15695,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -15381,6 +15796,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -15475,6 +15895,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -15571,6 +15996,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -15666,6 +16096,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -15760,6 +16195,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -15941,6 +16381,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -16035,6 +16480,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -16131,6 +16581,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -16225,6 +16680,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -16321,6 +16781,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -16415,6 +16880,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -16511,6 +16981,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -16605,6 +17080,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -16891,6 +17371,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -16985,6 +17470,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -17081,6 +17571,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -17175,6 +17670,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -17271,6 +17771,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -17365,6 +17870,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -17461,6 +17971,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -17555,6 +18070,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -17736,6 +18256,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -17830,6 +18355,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -18116,6 +18646,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -18210,6 +18745,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -18306,6 +18846,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -18400,6 +18945,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -18496,6 +19046,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -18590,6 +19145,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -18686,6 +19246,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -18780,6 +19345,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -18876,6 +19446,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -18970,6 +19545,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -19066,6 +19646,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -19160,6 +19745,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -19256,6 +19846,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -19350,6 +19945,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -19446,6 +20046,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -19540,6 +20145,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -19721,6 +20331,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -19815,6 +20430,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -19911,6 +20531,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -20005,6 +20630,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -20101,6 +20731,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -20195,6 +20830,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -20291,6 +20931,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -20385,6 +21030,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -20481,6 +21131,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -20575,6 +21230,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -20671,6 +21331,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -20766,6 +21431,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -20860,6 +21530,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -21061,6 +21736,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -21155,6 +21835,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -21251,6 +21936,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -21345,6 +22035,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -21441,6 +22136,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -21535,6 +22235,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -21716,6 +22421,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -21810,6 +22520,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -21906,6 +22621,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -22000,6 +22720,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -22096,6 +22821,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -22190,6 +22920,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -22286,6 +23021,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -22380,6 +23120,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -22476,6 +23221,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -22570,6 +23320,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -22666,6 +23421,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -22760,6 +23520,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -22856,6 +23621,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -22950,6 +23720,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -23046,6 +23821,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -23140,6 +23920,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -23236,6 +24021,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -23330,6 +24120,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -23426,6 +24221,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -23520,6 +24320,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -23616,6 +24421,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -23710,6 +24520,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -23806,6 +24621,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -23901,6 +24721,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -23995,6 +24820,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -24176,6 +25006,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -24270,6 +25105,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -24366,6 +25206,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -24460,6 +25305,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -24556,6 +25406,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -24650,6 +25505,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -24831,6 +25691,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -24925,6 +25790,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -25106,6 +25976,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -25200,6 +26075,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -25296,6 +26176,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -25391,6 +26276,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -25485,6 +26375,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -25666,6 +26561,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -25760,6 +26660,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -25941,6 +26846,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -26035,6 +26945,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -26131,6 +27046,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -26226,6 +27146,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -26320,6 +27245,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -26586,6 +27516,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -26680,6 +27615,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -26776,6 +27716,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -26870,6 +27815,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
@@ -26966,6 +27916,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailTrackBolt (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
       propertyPath: m_Mesh
@@ -27060,6 +28015,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RailTrackBolt (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522999558967217425, guid: 1d5ae64c907a86043a21c271f0039a6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5522999559218081589, guid: 1d5ae64c907a86043a21c271f0039a6a,
         type: 3}
