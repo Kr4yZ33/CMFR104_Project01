@@ -22,11 +22,14 @@ public class MissionTwo : MonoBehaviour
 
     public void StartMissionTwo()
     {
-        missionOneButtonLight.SetActive(false);
         missionTwoButtonLight.SetActive(true);
         gameManager.secondMissonInProgress = true;
         missionTwoUI.SetActive(true);
         transparentTree.SetActive(true);
+        if(gameManager.skipTrainingMissionns == true)
+        {
+            MissionTwoComplete();
+        }
     }
 
     public void MissionTwoComplete()
@@ -36,7 +39,7 @@ public class MissionTwo : MonoBehaviour
         gameManager.secondMissionComplete = true;
         gameManager.secondMissonInProgress = false;
         missionTwoUI.SetActive(false);
-        hoverChangeUIButtons.MakeGreen();
+        missionTwoButtonLight.SetActive(false);
         missionThree.StartMissionThree();
     }
 

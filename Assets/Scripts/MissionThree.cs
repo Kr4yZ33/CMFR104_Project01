@@ -34,10 +34,13 @@ public class MissionThree : MonoBehaviour
 
     public void StartMissionThree()
     {
-        missionTwoButtonLight.SetActive(false);
         missionThreeButtonLight.SetActive(true);
         gameManager.thirdMissonInProgress = true;
         missionThreeUI.SetActive(true);
+        if(gameManager.skipTrainingMissionns == true)
+        {
+            MissionThreeComplete();
+        }
     }
 
     public void MissionThreeComplete()
@@ -46,7 +49,7 @@ public class MissionThree : MonoBehaviour
         gameManager.thirdMissonComplete = true;
         gameManager.thirdMissonInProgress = false;
         missionThreeUI.SetActive(false);
-        hoverChangeUIButtons.MakeGreen();
+        missionThreeButtonLight.SetActive(false);
         missionFour.StartMissionFour();
     }
 

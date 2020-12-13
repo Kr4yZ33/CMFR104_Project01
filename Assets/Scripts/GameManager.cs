@@ -5,6 +5,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public MissionFour missionFour;
+    public MissionThree missionThree;
+    public MissionTwo missionTwo;
+    public MissionOne missionOne;
 
     public bool startMissionComplete;
     public bool startMissonInProgress;
@@ -14,6 +17,7 @@ public class GameManager : MonoBehaviour
     public bool thirdMissonInProgress;
     public bool fourthMissonComplete;
     public bool fourthMissonInProgress;
+    public bool skipTrainingMissionns;
 
 
     public GameObject missionOneQuickClear;
@@ -23,13 +27,15 @@ public class GameManager : MonoBehaviour
 
     public void SkipTrainingMissions()
     {
-        transparentTrack.SetActive(false);
-        transparentTree.SetActive(false);
-        missionOneQuickClear.SetActive(true);
-        startMissionComplete = true;
-        secondMissionComplete = true;
-        thirdMissonComplete = true;
-        missionFour.MissionFourComplete();
-        trainTrackMovementSoundAudioSource.SetActive(true);
+        skipTrainingMissionns = true;
+        if(startMissionComplete != true)
+        {
+            missionOneQuickClear.SetActive(true);
+            missionOne.StartMissionOne();
+        }
+        else
+        {
+            missionTwo.StartMissionTwo();
+        }
     }
 }

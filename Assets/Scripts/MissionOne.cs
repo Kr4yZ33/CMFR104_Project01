@@ -35,9 +35,10 @@ public class MissionOne : MonoBehaviour
         gameManager.startMissionComplete = true;
         gameManager.startMissonInProgress = false;
         missionOneUI.SetActive(false);
-        missionTwo.StartMissionTwo();
         trainTrackMovementSoundAudioSource.SetActive(true);
-        hoverChangeUIButtons.MakeGreen();
+        missionOneButtonLight.SetActive(false);
+        missionTwo.StartMissionTwo();
+        
     }
 
     public void DisplyMissionOne()
