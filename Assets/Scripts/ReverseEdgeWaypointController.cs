@@ -4,67 +4,78 @@ using UnityEngine;
 
 public class ReverseEdgeWaypointController : MonoBehaviour
 {
-    public HapticsController hapticsController;
+    public HapticsController hapticsController; // reference to the haptics controller script
 
-    public bool trainPassingTransform;
+    public bool trainPassingTransform; // bool for if the train is passing the edge transfor or not
 
-    public Transform centre;
-    public Transform closestEdge;
-    public Transform reverseEdge;
+    public Transform centre; // transofrm in the centre of the track tile
+    public Transform closestEdge; // the closes external edge to this edge waypoint
+    public Transform reverseEdge; // reference to the reverse edhe for the reverse dierction train tile
 
+    /// <summary>
+    /// fixed update happens every 60 frames
+    /// </summary>
     private void FixedUpdate()
     {
-        if(closestEdge == null)
+        if(closestEdge == null) // if the closest edge is null
         {
-            closestEdge = gameObject.transform;
+            closestEdge = gameObject.transform; // set the transform information fo the closest edge to this agme obejects transform(trying to avoid null errors)
         }
     }
 
+    /// <summary>
+    /// on trigger enter
+    /// </summary>
+    /// <param name="other"></param>
     void OnTriggerEnter(Collider other)
     {
-        if (trainPassingTransform == true)
+        if (trainPassingTransform == true) // if the bool for train passing transformj is true
         {
-            return;
+            return; // exit the script
 
         }
-        if (other.CompareTag("Train"))
+        if (other.CompareTag("Train")) // if the thing colliding with us has the tag Train
         {
 
-            TrainController script = other.gameObject.GetComponent<TrainController>();
+            TrainController script = other.gameObject.GetComponent<TrainController>(); // access the game object and get the train controller script from it (saves us having to assign manually)
 
-            if (script.previousTarget != centre)
+            if (script.previousTarget != centre) // if the train controller's previous target was not the centre
             {
-                script.previousTarget = reverseEdge;
-                script.currentTarget = centre;
-                trainPassingTransform = true;
+                script.previousTarget = reverseEdge; // set the previous target on the train controller script to the reverse edge
+                script.currentTarget = centre; // set the current target on the train controller script to the centre transform of the track tile
+                trainPassingTransform = true; // set the train passing transform bool to true
             }
-            if (script.previousTarget == centre)
+            if (script.previousTarget == centre) // if the train controller's previous target was the centre
             {
-                script.previousTarget = reverseEdge;
-                script.currentTarget = closestEdge;
-                trainPassingTransform = true;
+                script.previousTarget = reverseEdge; // set the previous target on the train controller script to the reverse edge
+                script.currentTarget = closestEdge; // set the current target on the train controller script to the closest edge 
+                trainPassingTransform = true;  // set the train passing transform bool to true
             }
         }
 
-        if (other.CompareTag("TrackEdge"))
+        if (other.CompareTag("TrackEdge")) // if the thing colliding with us is tagged TrackEdge
         {
-            closestEdge = other.gameObject.transform;
-            hapticsController.trackConnected = true;
-            hapticsController.PlayTrackConnectionClip();
+            closestEdge = other.gameObject.transform; // set the closest edge transform to the transform of the object that just collided with us.
+            hapticsController.trackConnected = true; // set the bool for track connected to true on the  haptics controller script
+            hapticsController.PlayTrackConnectionClip(); // call the function to play the track connection clip fom the haptics controller script
         }
     }
 
+    /// <summary>
+    /// on trigger exit
+    /// </summary>
+    /// <param name="other"></param>
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Train"))
+        if (other.CompareTag("Train")) // if the thing leaving out collider is tagged Train
         {
-            trainPassingTransform = false;
+            trainPassingTransform = false; // set the train passing bool transfor to false
         }
-        if (other.CompareTag("TrackEdge"))
+        if (other.CompareTag("TrackEdge")) // if the thing leaving out collider is tagged TrackEdge
         {
-            closestEdge = null;
-            hapticsController.trackConnected = false;
-            hapticsController.trackConnectClipPlayed = false;
+            closestEdge = null; // set the closest edge to null
+            hapticsController.trackConnected = false; // set the bool for trackj connected to true on the  haptics controller script
+            hapticsController.trackConnectClipPlayed = false; // set the bool for track connect clip played to true on the  haptics controller script
         }
 
     }
