@@ -6,13 +6,11 @@ public class MissionTwo : MonoBehaviour
 {
     public GameManager gameManager; // reference to the Game Manager
     public MissionThree missionThree;
-    public HoverChangeUIButtons hoverChangeUIButtons; // reference to the hoverchange UI buttons script (changes the colour of the button lights)
 
     public GameObject transparentTree;  // reference to the transparent guide tree
     public GameObject missionTwoUI; // reference to the mission two UI instruction card
     public GameObject uIButtonDisplay; // reference to the UI button control guide card
     public GameObject missionParent; // reference to the parent object the mission UI cards are on
-    public GameObject missionOneButtonLight; // reference to the button light for mission one
     public GameObject missionTwoButtonLight; // reference to the button light for mission two
 
     public AudioClip missionSuccessful; // reference to the audio clip that plays when a mission is successful

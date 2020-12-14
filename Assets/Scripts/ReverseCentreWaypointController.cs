@@ -17,17 +17,18 @@ public class ReverseCentreWaypointController : MonoBehaviour
         if (trainPassingTransform == true) // if the bool for train passing transform is true
         {
             return; // exit the script
-
         }
         if (other.CompareTag("Train")) // if the object colliding with us is tagged Train
         {
-
+            
             TrainController script = other.gameObject.GetComponent<TrainController>(); // access the game object and get the train controller script from it (saves us having to assign manually)
 
-            script.previousTarget = centre; // set the previous target on the train controller script to the centre transform
-            script.currentTarget = reverseEdge; // set the current target on the train controller script to the reverse edge transform of the track tile
-            trainPassingTransform = true; // set the train passing transform bool to true
-
+            if(script != null)
+            {
+                script.previousTarget = centre; // set the previous target on the train controller script to the centre transform
+                script.currentTarget = reverseEdge; // set the current target on the train controller script to the reverse edge transform of the track tile
+                trainPassingTransform = true; // set the train passing transform bool to true
+            }
         }
     }
 

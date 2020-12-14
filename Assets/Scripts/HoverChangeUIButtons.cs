@@ -6,7 +6,7 @@ public class HoverChangeUIButtons : MonoBehaviour
 {
     Renderer r; // private reference to the renderer of the object this script is attached to
 
-    void Start()
+    private void Awake()
     {
         r = GetComponent<Renderer>(); // on start get the renderer of this game object and assign it to r
     }
@@ -16,7 +16,11 @@ public class HoverChangeUIButtons : MonoBehaviour
     /// </summary>
     public void MakeGreen()
     {
-        r.material.color = Color.green; // set the renderer colour to green
+        if(r != null)
+        {
+            r.material.color = Color.green; // set the renderer colour to green
+        }
+        
     }
 
     /// <summary>
@@ -24,6 +28,10 @@ public class HoverChangeUIButtons : MonoBehaviour
     /// </summary>
     public void MakeRed()
     {
-        r.material.color = Color.red; // set the renderer colour to red
+        if(r != null)
+        {
+            r.material.color = Color.red; // set the renderer colour to red
+        }
+
     }
 }

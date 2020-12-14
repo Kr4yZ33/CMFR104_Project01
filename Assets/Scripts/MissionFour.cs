@@ -12,7 +12,6 @@ public class MissionFour : MonoBehaviour
     public GameObject uIButtonDisplay; // reference to the UI button control guide card
     public GameObject missionParent; // reference to the parent object the mission UI cards are on
     public GameObject makingOfUiDisplay; // reference to the parent the gallery behind the huge train so the gallery and the cars can be disabled and re-enabled
-    public GameObject missionThreeButtonLight; // reference to the button light for mission three
     public GameObject missionFourButtonLight; // reference to the button light for mission four
 
     public AudioClip missionSuccessful; // reference to the audio clip that plays when a mission is successful
@@ -44,7 +43,6 @@ public class MissionFour : MonoBehaviour
         if(gameManager.skipTrainingMissionns == true)  // if the skip training mission bool on the game mamaner script is true
         {
             MissionFourComplete(); // call the mission four complete function
-            hoverChangeUIButtons.MakeGreen(); // call the make green function on the hove change ui botton script (attached to the button light)
         }
     }
     /// <summary>
@@ -52,6 +50,7 @@ public class MissionFour : MonoBehaviour
     /// </summary>
     public void MissionFourComplete()
     {
+        hoverChangeUIButtons.MakeGreen();  // call the function to make the object gree from the hover change UI button script
         makingOfUiDisplay.SetActive(true); // enable the parent that holds the gallery UI
         uIButtonDisplay.SetActive(true); // enable the UIcontroller card
         audioSource.PlayOneShot(missionSuccessful); // play the mission successful audio clip as a play one shot
@@ -59,7 +58,7 @@ public class MissionFour : MonoBehaviour
         gameManager.fourthMissonInProgress = false; // set the bool for fourth mission in progress to false on the game manager script
         missionFourUI.SetActive(false); // disable the UI card for mission four
         missionParent.SetActive(false); // enable the mission parent game object
-        hoverChangeUIButtons.MakeGreen();  // call the function to make the object gree from the hover change UI button script
+        
     }
 
     /// <summary>

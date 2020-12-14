@@ -24,6 +24,7 @@ public class RideTheTrain : MonoBehaviour
 
         if (other.CompareTag("Train") && trainExitTile.trainExitTilePlaced == true && trainExitTile.buildPlatformInRange == true) // if the thing colliding with us has the tag train & the bool for train exit tile placed on the train exit tile script is true & the bool for the build platform being in range of the train exit tile is true
         {
+            Debug.Log("ride the train");
             trainExitTile.RideTheTrain(); // call the function for riding the train from the train exit tile.
         }
     }  

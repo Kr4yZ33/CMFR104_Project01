@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SpatialTracking;
 
 public class TrainExitTile : MonoBehaviour
 {
@@ -14,11 +15,11 @@ public class TrainExitTile : MonoBehaviour
     public bool ridingTrain; // bool for if the player is riding the train
     public bool passedStationWhileRidingTrain; // bool for if the train station has been passed while riding the train
     public bool buildPlatformInRange; // bool to check if the build platform is in range of the train exit tile (e.g. it's not placed up in the air away from the track, would would trap the player on the train ride).
-
-    public GameObject vRRig; // reference to our VR rig
-    public GameObject trainRideRig; // reference to the camera used for riding the train
+    
+    public GameObject trainRideRigCamera; // reference to the camera used for riding the train
 
     // I had a lot of trouble with disabling the VR rig and/or trying to re-scale it. I ended up having to disable the VR rig camera and hands, then enable a camera on the train.
+    public GameObject vRRig; // reference to our VR rig
     public GameObject rightHand; // reference to our right hand
     public GameObject rightHandRay; // reference to our right hand ray
     public GameObject leftHand; // reference to our left hand on the rig
@@ -69,12 +70,7 @@ public class TrainExitTile : MonoBehaviour
     /// </summary>
     public void RideTheTrain()
     {
-        vRRig.SetActive(false); // disable our VR rig camera (careful originally it was the whole rig, now only the main camera)
-        rightHand.SetActive(false); // disable our right hand
-        rightHandRay.SetActive(false); // disable our right hand ray
-        leftHand.SetActive(false); // disable our left hand
-        leftHandRay.SetActive(false); // disable our our left hand ray
-        trainRideRig.SetActive(true); // enable the train ride camera (careful, this actually sets the camera parent active, as that also has a script to lock the camera to the train ride)
+        RideTheTrainVRDisable();
         ridingTrain = true; // set the bool for riding the train to true
         audioSource.PlayOneShot(allABoard, volume); // play the all aboard audio clip as a play one shot
     }
@@ -84,14 +80,40 @@ public class TrainExitTile : MonoBehaviour
     /// </summary>
     void ExitTheTrain()
     {
-        vRRig.SetActive(true); // enable our VR rig camera (careful originally it was the whole rig, now only the main camera)
-        trainRideRig.SetActive(false); // disable the parent the train ride camera is childed to
+        ExitTheTrainCameraDisable();
         ridingTrain = false; // set the bool for riding the train to false
-        passedStationWhileRidingTrain = false; // set the bool for passed station while riding train to false 
-        playerRespawn.EnablePlayerRespawn(); // call the player respawn function from the player respawn script
+        passedStationWhileRidingTrain = false; // set the bool for passed station while riding train to false   
+    }
+
+    void RideTheTrainVRDisable()
+    {
+        vRRig.SetActive(false); // disable our VR rig camera (careful originally it was the whole rig, now only the main camera)
+        rightHand.SetActive(false); // disable our right hand
+        rightHandRay.SetActive(false); // disable our right hand ray
+        leftHand.SetActive(false); // disable our left hand
+        leftHandRay.SetActive(false); // disable our our left hand ray
+        RideTheTrainCameraEnable();
+    }
+
+    void ExitTheTrainVREnable()
+    {
+        vRRig.SetActive(true); // enable our VR rig camera (careful originally it was the whole rig, now only the main camera)
         rightHand.SetActive(true); // enable our right hand
         rightHandRay.SetActive(true); // enable our right hand ray
         leftHand.SetActive(true); // enable our left hand
         leftHandRay.SetActive(true); // enable our left hand ray
+        playerRespawn.EnablePlayerRespawn(); // call the player respawn function from the player respawn script
+    }
+
+    void ExitTheTrainCameraDisable()
+    {
+        trainRideRigCamera.SetActive(false);
+        ExitTheTrainVREnable();
+    }
+
+    void RideTheTrainCameraEnable()
+    {
+        Debug.Log("Train ride rig camera");
+        trainRideRigCamera.SetActive(true);
     }
 }

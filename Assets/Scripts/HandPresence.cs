@@ -42,7 +42,7 @@ public class HandPresence : MonoBehaviour
 			}
 			else
 			{
-				Debug.LogError("Error");
+				Debug.Log("Unable to find controller prefab in list");
 				spawnedController = Instantiate(controllerPrefabs[0], transform);
 			}
 

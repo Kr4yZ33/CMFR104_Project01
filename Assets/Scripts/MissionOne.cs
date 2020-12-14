@@ -6,7 +6,6 @@ public class MissionOne : MonoBehaviour
 {
     public GameManager gameManager; // reference to the Game Manager
     public MissionTwo missionTwo; // reference to the mission two script
-    public HoverChangeUIButtons hoverChangeUIButtons; // reference to the hoverchange UI buttons script (changes the colour of the button lights)
 
     public GameObject transparentTrack; //reference to the transparent guide track
     public GameObject missionOneUI; // reference to the mission one UI instruction card
