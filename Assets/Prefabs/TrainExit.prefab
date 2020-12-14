@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 3378864746697029701}
   m_LocalRotation: {x: -0, y: 0.7071068, z: 0.7071068, w: 0}
   m_LocalPosition: {x: 0.015014648, y: 0.13800049, z: -0.01499939}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8615392, y: 0.8615392, z: 0.8615392}
   m_Children:
   - {fileID: 2547289097758396929}
   m_Father: {fileID: 4401822684416981617}
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5b7c1b49e66391c4abbd84239bd13d1d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.79607844}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -517,7 +517,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 365246200c2251947bdcd5d333297dc0, type: 2}
+  - {fileID: 2100000, guid: fcd08240fb4a06d43b5f7a835905ac62, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -964,8 +964,8 @@ MonoBehaviour:
   ridingTrain: 0
   passedStationWhileRidingTrain: 0
   buildPlatformInRange: 0
+  trainRideRigCamera: {fileID: 0}
   vRRig: {fileID: 0}
-  trainRideRig: {fileID: 0}
   rightHand: {fileID: 0}
   rightHandRay: {fileID: 0}
   leftHand: {fileID: 0}
