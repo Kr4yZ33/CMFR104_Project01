@@ -13,17 +13,6 @@ public class WaypointLeftEdgeController : MonoBehaviour
     public Transform left; // reference to the left edge transform of the track tile
 
     /// <summary>
-    /// fixed update runs every 60 frames
-    /// </summary>
-    private void FixedUpdate()
-    {
-        if (closestEdge == null) // if the transform for the closest edge is null
-        {
-            closestEdge = gameObject.transform; // set the closest edge to the game objects transform
-        }
-    }
-
-    /// <summary>
     /// on trigger enter
     /// </summary>
     /// <param name="other"></param>
@@ -38,17 +27,20 @@ public class WaypointLeftEdgeController : MonoBehaviour
         {
             TrainController script = other.gameObject.GetComponent<TrainController>(); // access the game object and get the train controller script from it (saves us having to assign manually)
              
-            if (script.previousTarget != right) // if the train controller's previous target was not the right transform
+            if (script != null && script.previousTarget != right) // if the train controller's previous target was not the right transform
             {
                 script.previousTarget = left; // set the previous target on the train controller script to the left transform
                 script.currentTarget = right; // set the current target on the train controller script to the right transform of the track tile
                 trainPassingTransform = true; // set the train passing transform bool to true
             }
-            if (script.previousTarget == right) // if the previous target on the train controller script is the right transform
+            if (script != null && script.previousTarget == right) // if the previous target on the train controller script is the right transform
             {
                 script.previousTarget = left; // set the previous target on the train controller script to the left transform
-                script.currentTarget = closestEdge; // set the current target on the train controller script to the closest edge transform of the track tile
                 trainPassingTransform = true; // set the train passing transform bool to true
+                if(closestEdge != null)
+                {
+                    script.currentTarget = closestEdge; // set the current target on the train controller script to the closest edge transform of the track tile
+                }
             }
         }
 
